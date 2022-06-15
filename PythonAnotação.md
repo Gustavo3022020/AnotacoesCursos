@@ -1,0 +1,5844 @@
+﻿PYTHON 1
+
+STYLE GUIDE FOR PYTHON CODE
+
+PEP – PYTHON ENHANCEMENT PROPOSAL
+
+SÃO PROPOSTAS DE MELHORIAS PARA A LINGUAGEM PYTHON
+
+IDEIAS DA PEP 8 É QUE PODEMOS ESCREVER CODIGOS PYTHON
+
+DE FORMA BONITA
+
+**1 –** CAMEL CASE PARA NOME DE CLASSES:
+
+O QUE É CAMEL CASE
+
+É UMA PALAVRA QUE COMEÇA COM LETRA MAIÚSCULA
+
+EX: class Calculadora
+
+SE FOR COMPOSTA
+
+EX: class CalculadoraCientifica **LETRA MAIÚSCULA EM CADA PALAVRA**
+
+**2 –** ULTILIZE NOMES EM MINÚSCULO, SEPARADOS POR
+
+UNDERLINE PARA FUNÇÕES DE VARIAVEL:
+
+EX: def soma():
+
+pass
+
+def soma\_dois():
+
+pass
+
+SEPARAÇÃO POR UNDERLINE
+
+**3 –** ULTILIZE 4 ESPAÇO PARA IDENTAÇÃO
+
+If
+
+----print(‘TEM’)
+
+QUATRO ESPAÇO
+
+**OBS:** TAB FUNCIONA MAIS NÃO É ACONSELHAVEL A USAR
+
+**4 –** LINHAS EM BRANCO
+
+DUAS LINHA EM BRANCO PARA CLASS
+
+\- SEPARAR FUNÇÕES E DEFINIÇÕES DE CLASS COM DUAS
+
+LINHAS EM BRANCO
+
+\- METADOS DENTRO DE UMA CLASSE DEVEM SER SEPARADOS
+
+COM UMA ÚNICA LINHA EM BRANCO
+
+**5 –** IMPORTS
+
+IMPORTS DEVEM SER SEMPRE EM LINHAS SEPARADAS NA
+
+PARTE DE CIMA
+
+**IMPORT ERRADO**
+
+Import sys, os
+
+**IMPORT CERTO**
+
+Import sys
+
+Import os
+
+NÃO HÁ PROBLEMAS DE USAR
+
+From types import stringtype, listtype
+
+CASO TENHA MUITOS IMPORTS
+
+From types import(
+
+----s
+
+e
+
+se
+
+out
+
+)
+
+**OBS:**
+
+**IMPORTS SEMPRE NO TOPO OU DEPOIS DE COMENTARIOS**
+
+**6 –** ESPAÇOS EM EXPRESSÕES E INSTRUÇÕES
+
+**NÃO FAÇA:**
+
+**OS TRAÇO – REPRESENTAM ESPAÇOS**
+
+funcao(----algo[1], {outro:2}) NÃO DEIXE ESPAÇOS
+
+**FAÇA:**
+
+funcao(algo[1],{outro:2})
+
+**NÃO FAÇA:**
+
+algo----(1) NÃO DEIXE ESPAÇOS
+
+**FAÇA:**
+
+algo(1) SEM ESPAÇOS
+
+**NÃO FAÇA:**
+
+dict----[‘chave’]----=----lista----[indice]
+
+**FAÇA:**
+
+dict[‘chave’]=lista[índice]
+
+**7 –** TERMINE SEMPRE UMA INSTRUÇÃO COM UMA NOVA LINHA
+
+‘’’oi
+
+‘’’
+
+DE ENTER PARA SEMPRE DEIXAR UMA LINHA EM BRANCO
+
+**DIR E HELP**
+
+ULTILITARIOS PYTHON PARA AUXILAR NA PROGRAMAÇÃO
+
+**dir –** APRESENTA TODOS OS (ATRIBUTOS/PROPRIEDADE) E
+
+(FUNÇÕES/MÉTODOS) DISPONIVEIS PARA DETERMINADOS TIPO
+
+DE DADO DE VARIÁVEL
+
+**help –** APRESENTA DOCUMENTAÇÃO/COMO ULTILIZAR OS
+
+ATRIBUTOS/PROPRIEDADES E FUNÇÕES/MÉTODOS DISPONÍVEIS
+
+PARA DETERMINADO TIPO DE DADO OU VARIÁVEL
+
+**dir – (TIPO DE DADO/ VARIAVEL)**
+
+**help – (MOSTRA O QUE FAZ DETERMINADO COMANDO,**
+
+**MOSTRA A DOCUMENTAÇÃO DE COMO ULTILIZAR**
+
+**RECEBENDO DADOS DO**
+
+**USUÁRIO**
+
+print(‘Qual o seu nome’)
+
+nome = input()
+
+print(‘Seja bem-vindo {}).format(nome))
+
+**input – SIGNIFICA ENTRADA DE DADOS**
+
+EXEMPLO DE PRINT ATUAL
+
+print(f’Seja bem-vindo{nome}’)
+
+CAST É A CONVERSÃO DE DADO
+
+Input() – **TODO DADO RECEBIDO É DO TIPO STRING**
+
+TIPO NUMÉRICO –
+
+TODO NÚMERO INMPAR RESTO 1
+
+TODO NÚMERO PAR RESTO 0
+
+**NÃO EXISTE LIMITE NO PYTHON**
+
+TIPO float –
+
+CASAS DECIMAIS NA PROGRAMAÇÃO É PONTO (.) E NÃO
+
+VIRGULA (,)
+
+print(type())
+
+AO CONVERTER VALORES float PARA int, NÓS PERDEMOS
+
+PRECISÃO
+
+SE QUISER CRIAR UMA VARIAVEL COMPLEXA ATRIBUIA O **j**
+
+**EX:**
+
+(5j)
+
+**TER CUIDADO NA CONVERSÃO DE DADOS**
+
+TIPO BOLEANO
+
+VEM DA ALGEBRA BOOLEANA
+
+**2 – CONSTANTIS**
+
+True VERDADEIRO
+
+False FALSO
+
+**OBS:**
+
+SEMPRE COM AS INICIANTES MAIÚSCULAS
+
+True
+
+False
+
+ULTILIZA PARA OPERAÇÕES BÁSICAS
+
+FAZENDOA NEGAÇÃO, SE O VALOR BOLEANO FOR
+
+VERDADEIRO O RESULTADO SERÁ FALSO, SE FOR FALSO O
+
+RESULTADO SERÁ VERDADEIRO
+
+SEMPRE AO CONTRARIO
+
+print(not ativo) **not – NEGAÇÃO**
+
+or – É UMA OPERAÇÃO BINARIA DEPENDE DE DOIS VALORES
+
+true or true true
+
+true or false true
+
+false or true true
+
+false or false false
+
+E (and) TAMBÉM É UMA OPERAÇÃO BINÁRIA, OU SEJA,
+
+DEPENDE DE DOIS VALORES AMBOS OS VALORES DEVEM SER
+
+VERDADEIRO
+
+true and true true
+
+true and false false
+
+false and true false
+
+false and false false
+
+== IGUAL
+
+<= MENOR OU IGUAL
+
+\>= MAIOR OU IGUAL
+
+O TIPO STRING
+
+EM PYTHON, UM DADO É CONSIDERADO DO TIPO STRING
+
+SEMPRE QUE:
+
+-ESTIVER ENTRE ÁSPAS SIMPLES
+
+-ESTIVER ENTRE ÁSPAS DUPLAS
+
+-ESTIVER ENTRE ÁSPAS TRIPLAS
+
+\n PULA LINHA
+
+\’’ CARACTERE DE ESCAPE
+
+upper – DEIXA TUDO MAIUSCULO
+
+lower – DEIXA TUDO MINUSCULO
+
+split – TRANSFORMA EM LISTA
+
+LISTA SEMPRE COMEÇA NO 0, 1, 2, 3
+
+print(nome[0:4]) ELE SEMPRE PEGA UM ANTES
+
+**EX: 0 ATÉ O 3**
+
+(nome[0:]) SLICE DE STRING
+
+print(nome.split())
+
+TRANSFORMA EM UMA LISTA DE PALAVRAS
+
+print(nome.split()[]) PEGA A PRIMEIRA PALAVRA OU A QUE
+
+ESCOLHER COMEÇANDO DO 0(ZERO)
+
+**INVERTER A PALAVRA**
+
+print(nome[::-1]) COMECE DO PRIMEIRO ELEMENTO, VÁ ATÉ O
+
+ULTIMO ELEMENTO E INVENTA **INVERSÃO DE STRING**
+
+print(nome.replace(‘e’ , ‘i’)) **SUBSTITUI UMA LETRA QUE TEM NA**
+
+**PALAVRA**
+
+print(type(var)) **MOSTRA O TIPO (STR, INT ENTRE OUTROS**
+
+ESCOPO DE VARIÁVEIS
+
+**1 –** VARIÁVEIS GLOBAIS **SÃO RECONHECIDAS, OU SEJA, SEU**
+
+**ESCOPO COMPREENDE, TODO PROGRAMA**
+
+**2 –** VARIÁVEIS LOCAIS **VARIÁVEIS LOCAIS SÃO**
+
+**RECONHECIDAS APENAS NO BLOCO ONDE FORAM**
+
+**DECLARADA, OU SEJA, SEU ESCOPO SEJA LIMITADO AO**
+
+**BLOCO ONDE FOI DECLARADA**
+
+**OBS:** PARA DECLARAR VARIAVEIS EM PYTHON FAZEMOS
+
+nome\_da\_variável = valor\_da\_variável
+
+**EX:** numero = 42
+
+**PYTHON É UMA LINGUAGEM DE TIPAGEM DINÂMICA, ISSO**
+
+**SIGNIFICA QUE AO DECLARAR UMA VARIÁVEL, NÓS NÃO**
+
+**COLOCAMOS O TIPO DE DADO DELA, ESTE TIPO É INFERIDO**
+
+**AO ATRIBUIMOS O VALOR Á MESMA**
+
+numero = 42 VARIÁVEL GLOBAL
+
+if numero > 10:
+
+----novo = numero + 10 VARIÁVEL NOVO
+
+----print(novo)
+
+**OBS:** A VARIÁVEL ‘**NOVO’** ESTA DECLARADA LOCALMENTE
+
+DENTRO DO BLOCO if
+
+**PORTANTO É LOCAL**
+
+**ESTRUTURAS CONDICIONAIS**
+
+if, else, elif
+
+**if – se**
+
+**else – se não**
+
+if idade < 10:
+
+----print(‘Menor de idade’)
+
+else:
+
+----print(‘Maior de idade’)
+
+and, or, not, is
+
+ESTRUTURAS LÓGICAS: and(e)
+
+or(ou)
+
+not(não)
+
+is(é)
+
+OPERADORES UNÁRIOS:
+
+\- not
+
+OPERADORES BINÁRIOS:
+
+\- and, or, is
+
+ativo = True
+
+logado = False
+
+if ativo:
+
+----print(‘Usuario ativo no sistema’)
+
+if ativo and logado:
+
+----print(‘Bem-Vindo usuário’)
+
+else:
+
+----print(‘Você precisa ativar sua conta’)
+
+**REGRAS DE FUNCIONAMENTO**
+
+PARA O ‘and’, AMBOS OS VALORES PRECISAM SER ‘True’
+
+PARA O ‘or’, UM OU OUTRO VALOR PRECISA SER ‘True’
+
+PARA O ‘not’, O VALOR DO BOLEANO É INVERTIDO OU SEJA SE
+
+FOR ‘True’, VIRA ‘False’, SE FOR ‘False’ vira ‘True’
+
+PARA O ‘is’, O VALOR É COMPARADO COM O SEGUNDO
+
+**LOOP FOR**
+
+loop ESTRUTURAS DE REPETIÇÃO
+
+for UMA DESSAS ESTRUTURAS
+
+**PYTHON**
+
+for item in interavel
+
+----**EXECUÇÃO DO LOOP**
+
+ULTILIZAMOS loop PARA INTERAR SOBRE SEQUÊNCIAS OU
+
+SOBRE VALORES INTERÁVEIS
+
+EXEMPLOS DE INTERÁVEIS
+
+\- string
+
+nome = ‘geek’
+
+\- list
+
+lista = [1, 3, 5, 7, 9]
+
+\- range
+
+numeros = range(1, 10)
+
+EXEMPLO DE for
+
+for letra in nome:
+
+----print(letra)
+
+EXEMPLO DE for 2
+
+for numero in lista:
+
+----print(numero)
+
+EXEMPLO DE FOR 3
+
+for numero in range(1, 10):
+
+----print(numero)
+
+O VALOR FINAL DE range NÃO É INCLUSIVE, ISSO QUER DIZER
+
+QUE SE VOCÊ COLOCAR (1, 10) ELE NÃO IRA DE 1 A 10 E SIM DE
+
+1 A 9
+
+SEMPRE UM NÚMERO ANTES DO INDICADO
+
+**OBS: range – O VALOR FINAL NÃO É INCLUSIVE**
+
+for i, u in enumerate(nome):
+
+----print(nome[e])
+
+ENUMERATE:
+
+((0,’G’), (1, ‘E’), (2,’E’), (3,’K’))
+
+ELE GERA PARA CADA SEQUENCIA UM INDICE
+
+for índice, letra in enumarete(nome):
+
+----print(letra)
+
+for \_, letra in enumarete(nome): \_(UNDERLINE) DESCARTA O INDICE
+
+----print(letra)
+
+**OBS:** QUANDO NÃO PRECISAMOS DE UM VALOR, PODEMOS
+
+DESCARTÁ-LO ULTILIZANDO UM UNDERLINE (\_)
+
+numero = range(1,10) TEMOS QUE TRANSFORMAR EM UMA LISTA
+
+for valor in enumarate(nome):
+
+----print(valor)
+
+----print(valor[0]) SOMENTE INDICES
+
+----print(valor[1]) SOMENTE LETRAS
+
+qtd = int(input(‘QUANTAS VEZES ESSE LOOP DEVE RODAR?’))
+
+for n in range(1, qtd + 1): **+ 1 PORQUE O FINAL DE RANGE NÃO É**
+
+**INCLUSIVE**
+
+----print(f’IMPRIMINDO{N})
+
+qtd = int(input(‘QUANTAS VEZES’))
+
+soma = 0
+
+for n in range(1, qtd + 1):
+
+----num = int(input(f’INFORME O {n/qtd})
+
+----soma = soma + num
+
+print(f’A soma é {soma}’)
+
+print(letra, end=’ ‘) FAZ PARAR DE PULAR LINHA
+
+SEGURAR CTRL MOSTRA A MESMA DOCUMENTAÇÃO QUANDO
+
+USA O HELP **NO PYCHARM**
+
+EMOJI
+
+ORIGINAL: U+1F60D
+
+MODIFICADO: U0001F60D **TROCA O + POR 3 (ZEROS)**
+
+emoji = ‘U0001F60D’
+
+for num in range(1,11):
+
+----print(f’{emoji \* num}’)
+
+print(‘U0001F60D’ \* NUM)
+
+**3 –** EXPLORANDO RANGES
+
+RANGES
+
+**-** PRECISAMOS CONHECER O loop for PARA USAR
+
+range
+
+**-** PRECISAMOS CONHECER O range PARA
+
+TRABALHAR MELHOR COM loop for
+
+RANGE SÃO ULTILIZADOS PARA GERAR SEQUÊNCIAS
+
+NUMERICAS, NÃO DE FORMA ALEATÓRIA, MAS SIM DE
+
+MANEIRA ESPECIFICADA
+
+FORMAS GERAIS:
+
+range(valor\_de\_parada)
+
+**OBS:** valor\_de\_parada não inclusive (inicio padrão 0, e passa de 1 em 1)
+
+FORMA 1
+
+for num in range(11): 0,1,2,3,4,5,6,7,8,9,10
+
+----print(num)
+
+FORMA 2
+
+range(valor\_de\_inicio, valor\_de\_parada)
+
+for num in range(1, 11): **O (1) FAZ COMEÇAR NO 1**
+
+----print(num)
+
+FORMA 3
+
+range(valor\_inicial, valor\_parada, passo)
+
+for nume in range(1,10,2): **DE 2 EM 2 (**1, 3, 5, 7 E 9**)**
+
+----print(num)
+
+FORMA 4 INVERSA
+
+range(valor\_inicial, valor\_de\_parada, passo)
+
+for num in range(10, 0, -1): 10,9,8,7,6,5,4,3,2,1
+
+----print(num)
+
+lista = list(range(10))
+
+**list CONVERTE O RANGE PARA UMA LISTA, PARA ULTILIZAR**
+
+**NO CONSOLE**
+
+LOOP WHILE
+
+FORMA GERAL
+
+while expressão\_boleana:
+
+//execução do loop
+
+O BLOCO DE WHILE SERÁ REPETIDO ENQUANTO A EXPRESSÃO
+
+BOLEANA FOR VERDADEIRA
+
+EXPRESSÃO BOLEANA É TODA EXPRESSÃO ONDE O
+
+RESULTADO É VERDADEIRO OU FALSO
+
+EXEMPLO:
+
+num = 5
+
+num < 5 – False
+
+True e False SÃO EXPRESSÃO BOLEANA
+
+numero = 1
+
+while numero < 10:
+
+----print(numero)
+
+----numero = numero + 1
+
+**OBS:** EM UM loop while, EM IMPORTANTE QUE CUIDAMOS DO
+
+CRITERIO DE PARADA PARA NÃO CAUSAR loop INFINITO
+
+resposta = ‘ ‘
+
+while resposta != ‘sim’
+
+----resposta = input(‘JÁ ACABOU JESSICA?’)
+
+TEMOS QUE FAZER UM while QUE TENHA PARADA
+
+PORÉM EXISTE PROGRAMS QUE NECESSITA DE UM loop
+
+INFINITO
+
+**5 –** SAINDO DE loop COM break
+
+FUNCIONA DA MESMA FORMA QUE NAS LINGUAGENS C E JAVA
+
+ULTILIZAMOS O break PARA SAIR DE loop DE MANEIRA
+
+PROJETADA
+
+**EXEMPLO 1**
+
+for numero in range(1,11):
+
+----if numero == 6:
+
+--------break
+
+----else:
+
+--------print(numero)
+
+print(‘SAIU DO LOOP’)
+
+**EXEMPLO 2**
+
+while True:
+
+----comando = input(‘Digite’)
+
+----if comando == ‘SAIR’:
+
+--------break
+
+**COLEÇÕES PYTHON**
+
+**LISTAS**
+
+LISTAS EM PYTHON FUNCIONA COMO VETORES/MATRIZES
+
+(arrays) EM OUTRAS LINGUAGENS COM A DIFERENÇA DE SEREM
+
+DINÂMICOS E TAMBÉM DE PODERMOS COLOCAR QUALQUER
+
+TIPO DE DADOS
+
+\- **DINÂMICO:** NÃO POSSUI TAMANHO FIXO OU SEJA, PODEMOS
+
+CRIAR A LISTA E SIMPLESMENTE IR ADICIONANDO ELEMENTOS
+
+\- **QUALQUER TIPO DE DADO:** NÃO POSSUEM TIPO DE DADO
+
+FIXO OU SEJA, PODEMOS COLOCAR QUALQUER TIPO DE DADO
+
+AS LISTAS EM PYTHON SÃO REPRESENTADAS POR COLCHETES:
+
+[]
+
+type([])
+
+lista1 = [1, 99, 4, 27, 15, 22]
+
+lista2 = [‘G’, ‘e’, ‘e’, ‘k’]
+
+lista3 = []
+
+lista4 = list(range(11))
+
+lista5 = list(‘Geek University’)
+
+PODEMOS FACILMENTE CHECAR SE DETERMINADO VALOR
+
+ESTÁ CONTIDO NA LISTA
+
+num = 18
+
+if num in lista4:
+
+----print(‘Encontrei o numero 8’)
+
+else:
+
+----print(‘Não encontrei o número 8’)
+
+PODEMOS ODERNAR UMA LISTA
+
+----(lista.sort())
+
+PODEMOS FACILMENTE CONTAR O NÚMERO DE OCORRÊNCIAS
+
+DE UM VALOR EM UMA LISTA
+
+print(lista1.cout(1)) **O (1) CONTA QUANTAS CARACTERES TEM**
+
+PARA ADICIONAR ELEMENTOS A NOSSA LISTA ULTILIZAMOS A
+
+FUNÇÃO append
+
+lista1.append(42)
+
+**OBS:** COM append, NÓS SÓ CONSEGUIMOS ADICIONAS UM
+
+ELEMENTO POR VEZ E COLOCAR COM ELEMENTO ÚNICO
+
+lista1.extend([]) **O EXTEND NÃO ACEITA VALOR ÚNICO**
+
+ADICIONA INDIVIDUALMENTE, E COLOCA CADA ELEMENTO DA
+
+LISTA COMO VALOR ADICIONAL A LISTA
+
+append E extend ADICIONA SEMPRE AO FINAL DA FILA
+
+PODEMOS INSERIR UM NOVO ELEMENTO NA LISTA
+
+INFORMANDO A POSIÇÃO DO ÍNDICE
+
+lista.insert(2, ‘novovalor’) **O (2) INDICA A POSIÇÃO DO NOVO**
+
+**VALOR**
+
+**OBS:** ISSO NÃO SUBISTITUI O VALOR INICIAL O MESMO SERÁ
+
+DESLOCADO PARA A DIREITA DA LISTA
+
+lista6 = lista1 + lista2 **IGUAL EXTEND**
+
+print(lista6)
+
+lista1.inverse() **REVERTE A LISTA DE TRAZ PRA FRENTE**
+
+print(lista1[::-1]) **INVERTE A LISTA TAMBEM**
+
+**COPIAR UMA LISTA**
+
+Lista6 = lista2.copy( )
+
+print(lista6)
+
+print(len(lista2)) à **LEN à** MOSTRA OS ELEMENTOS
+
+PODEMOS CONTAR QUANTOS ELEMENTOS  TEM NA LISTA
+
+PODEMOS FACILMENTE REMOVER O ULTIMO ELEMENTO  DE UMA LISTA 
+
+Lista.pop( ) à **POP à**  POP REMOVE O ULTIMO ELEMENTO
+
+**OBS:**  O POP NÃO SOMENTE REMOVE O ULTIMO ELEMENTO MAS AMBOS RETORNA
+
+PODEMOS REMOVER UM ELEMENTO PELO ÍNDICE
+
+Lista5.pop(2) à **OBS:** O ELEMENTO A DIREITA DESTE ÍNDICE SERÃO DESLOCADOS PARA ESQUERDA
+
+PODEMOS REMOVER TODOS OS ELEMENTOS**(** **ZERAR A LISTA)**
+
+Lista5.clear( ) **à CLEAR à** EXCLUI TUDO DA LISTA
+
+Nova = nova \* 3 à MULTIPLICA A LISTA NELA MESMO
+
+PODEMOS FACILMENTE CONVERTER UMA STRING PARA UMA LISTA 
+
+\# EXEMPLO 1
+
+Curso = ‘programação em python’
+
+Curso = curso.split( ) à **SPLIT à**  TRANSFORME EM LISTA, MAS POR PADRÃO  SEPARA O ELEMENTO DAS LISTAS POR ESPAÇOS ENTRE ELAS
+
+\# EXEMPLO 2
+
+Curso = ‘programação em python’
+
+Curso = curso.split(‘,’) à (‘,’) à MUDA DE ESPAÇOS PARA A VIRGULA
+
+CONVERTENDO UMA  LISTA EM UMA STRING
+
+Curso = ( ).join( ) à NOME DA LISTA
+
+OBS: PEGA A LISTA, COLOCA ESPAÇO ENTRE CADA ELEMENTO E TRANSFORMA EM UMA STRING
+
+Curso = ‘$’.join(lista6) à ‘$’.join à IRÁ COLOCAR UM $ EM CADA ESPAÇO
+
+\# PODEMOS COLOCAR QUALQUER TIPO DE DADOS EM UMA LISTA, INCLUINDO SE ESTIVER MISTURANDO ESSES DADOS
+
+\# INTERANDO SOBRE LISTAS
+
+\# ULTILIZANDO FOR
+
+For elemento in lista1:
+
+----print(element)
+
+\# EXEMPLO 2 à ULTILIZANDO WHILE
+
+Carrinho = [ ]
+
+Produto =  ‘ ‘
+
+While produto ! = ‘sair’:
+
+----print(‘   ‘)
+
+----produto = input( )
+
+----If produto != ‘sair’:
+
+--------carrinho.append(produto)
+
+For produto in carrinho:
+
+----print(produto)
+
+\# ULTILIZANDO VARIÁVEIS EM LISTAS
+
+Números = [1, 2, 3]
+
+Num1 = 1
+
+Num2 = 2
+
+Numeros = [num1, num2]
+
+Print(numeros)
+
+\# FAZEMOS ACESSO AOS ELEMENTOS DE FORMA INDEXADA
+
+\#                 0               1
+
+Cores= [‘verde’, ‘amarelo’]
+
+Print(cores[0]) à COR VERDE
+
+`                      `POSIÇÃO QUE VOCÊ QUER
+
+\# FAZER ACESSO AO ELEMENTOS DE FORMA INVERSA
+
+Print(cores[-2]) à  VERDE
+
+O MESMO TRANSFORMA A LISTA INVERSA
+
+Cores = [‘verde’, ‘amarelo’, ‘azul’, ‘branco’]
+
+For  cor in cores:
+
+----print(cor)
+
+Índice = 0
+
+While índice < len(cores)
+
+----print(cores[índice])
+
+----indice = índice + 1
+
+\# GERAR INDICE EM UMA FOR
+
+For índice, cor in enumarete(cores):
+
+----print(indice, cor)
+
+\# LISTAS ACEITAM VALORES REPETIDOS
+
+\# OUTROS MÉTODOS NÃO SÃO IMPORTANTES MAS TAMBÉM UTEIS
+
+\# ENCONTRAR O INDICE DE UM ELEMENTO NA LISTA
+
+Números = [5, 6, 7, 8]
+
+\# EM QUAL INDICE ESTA O VALOR 6
+
+Print(números.index(6)) à INDEX **(INDICE)**
+
+OBS: CASO NÃO TENHA ESSE ELEMENTO NA LISTA, SERÁ APRESENTADO ERRO  VALUEERROR
+
+SE TIVER UM VALOR DUPLICADO ELE RETORNA OI PRIMEIRO ELEMENTO ENCONTRADO
+
+PODEMOS FAZER BUSCA DENTRO DE UM range, OU SEJA, QUAL INDICE COMEÇAR A BUSCAR
+
+Print(números.index(5, 1)) 5àelemento 1à INICIO DO INDICE QUE VOCE ESCOLHE
+
+ValueError – QUANDO UM VALOR NÃO EXISTE
+
+PODEMOS FAZER BUSCA DENTRO DE UM range, inicio/fim
+
+Print(números.index(8, 6, 9)) 
+
+8 à BUSCAR O INDICE 8
+
+6 e 9 à ENTRE O 6 AO 9
+
+\# REVISÃO DO SLICING
+
+Lista[inicio: fim: passo]
+
+Range(inicio: fim: passo)
+
+\# TRABALHANDO COM SLICE DE LISTA COM O PARÂMETRO ‘INCIO’
+
+Lista = [1, 2, 3, 4]
+
+Print(lista[1: ])
+
+INICIANDO NO INDICE 1 E PEGANDO TODOS OS ELEMENTOS RESTANTES
+
+Print(lista[ : : ]) à MOSTRA TODOS ELEMENTOS
+
+TRABALHANDO COM SLICE DE LISTA COM O PARÂMETRO ‘FIM’
+
+Print(lista[ :2]) à COMEÇA NO 0 E PEGA ATÉ O ÍNDICE 2 - 1
+
+Print(lista[ :4]) à COMEÇA EM 0, PEGA ATÉ O ÍNDICE 4 – 1
+
+TRABALHANDO COM SLICE DE LISTA COM O PARAMETRO ‘PASSO’
+
+Print(lista[1:2]) à COMEÇA EM 1, VAI ATÉ O FINAL, DE 2 EM 2
+
+Print(lista[ : : ]) à COMEÇA EM 0, VAI ATÉ O FINAL, DE 2 EM 2
+
+PODEMOS USAR VALOR NEGASTIVO
+
+Print(lista[1 : : -1]) -1 à INVERTE A LISTA
+
+INVERTENDO VALORES EM UMA LISTA
+
+Nomes = [‘geek’, ‘university’]
+
+Nomes[0], nomes[1] = nomes[1], nomes[0]
+
+Print(nomes)
+
+Nomes.reverse( )
+
+Print(nomes)
+
+**SOMA, VALOR MÁXIMO, VALOR MINIMO,** TAMANHO **à TAMANHO SEMPRE APARECE NÃO IMPORTA SE E REAL OU NAO**
+
+**SE OS VALORES FOREM TODOS INTEIROS OU REAIS**
+
+Print(sum(lista)) à SOMA
+
+Print(max(lista)) à VALOR MAXIMO
+
+Print(min(lista)) à VALOR MINIMO
+
+Print(len(lista)) à TAMANHO DA LISTA
+
+TRANSFORMAR UMA LISTA EM TUPLA
+
+Lista = [1, 2, 3, 4]
+
+Print(lista)
+
+Print(type(lista))
+
+Tupla = tuple(lista)
+
+Print(tupla)
+
+**OBS : LISTA = COLCHETES**
+
+`           `**TUPLAS = PARENTESES**
+
+DESEMPACOTAMENTO DE LISTAS
+
+Lista = [1, 2, 3, 4]
+
+Num1, num2, num3 = lista
+
+Print(num1)
+
+Print(num2)
+
+Print(num3)
+
+OBS: SE TIVERMOS MAIS ELEMENTOS PARA DESEMPACOTAR DO QUE VARIÁVEIS PARA RECEBER OS VALORES, TEREMOS 
+
+ValueError
+
+COPIANDO UMA LISTA PARA OUTRA
+
+(shalow copy, copy e deep copy)
+
+FORMA 1 – Deep copy
+
+Lista = [1, 2, 3]
+
+Print(lista)
+
+Nova = lista.copy( ) à CÓPIA
+
+Print(nova)
+
+Nova.append(4)
+
+VEJA QUE AO UTILIZAMOS lista.copy( ) COPIAMOS OS DAMOS DA LISTA PARA UMA NOVA LISTA, MAS ELAS FICARAM TOTALMENTE INDEPEDENTES, OU SEJA, MODIFICANDO UMA LISTA, NÃO AFETA A OUTRA. ISSO EM PYTHON É CHAMADO DE **DEEP COPY (CÓPIA PROFUNDA)**
+
+FORMA 2 – Shallow copy
+
+Lista = [1, 2, 3]
+
+Print(lista)
+
+Nova = lista à CÓPIA
+
+Nova.append(4)
+
+ULTIZAMOS A CÓPIA VIA ATRIBUIÇÃO E COPIAMOS OS DADOS DA LISTA PARA A NOVA LISTA, MAS APÓS REALIZAR MODIFICAÇÃO SE REFLETIU EM AMBAS AS LISTAS ISSO EM PYTHON É CHAMADA DE **SHALLOW COPY**
+
+TUPLAS (tuple)
+
+SÃO BASTANTES PARECIDAS COM LISTAS, EXISTEM BASICAMENTE DUAS DIFERENÇAS BÁSICAS:
+
+1 – AS TUPLAS SÃO REPRESENTADAS POR PARENTESES ()
+
+Print(type(())) à TUPLA
+
+2 – AS TUPLAS SÃO IMUTAVEIS: ISSO SIGNIFICA QUE AO SE CRIAR UMA TUPLA ELA NÃO MUDA. TODA OPERAÇÃO EM UMA TUPLA GERA UMA NOVA TUPLA
+
+**CUIDADO 1:**  AS TUPLAS SÃO REPRESENTADAS POR () MAS VWJ 
+
+Tupla1(1, 2, 3, 4, 5, 6)
+
+Print(tupla1)
+
+Tupla2 = 1, 2, 3, 4, 5, 6
+
+Print(tupla2)
+
+**CUIDADO 2:** TUPLAS COM 1 ELEMENTO
+
+Tupla3 = (4) à NÃO É UMA TUPLA E SIM INT
+
+Print(tupla3)
+
+Tupla4 = (4,) à ISSO É UMA TUPLA
+
+Print(tupla4)
+
+CONCLUSÃO: PODEMOS CONCLUIR QUE TUPLAS SÃO DEFINIDAS PELA VIRGULA E NÃO PELO USO DO PARENTESES
+
+Tupla5 = 4, à UMA TUPLA
+
+A GENTE DEFINE UMA TUPLE PELA VIRGULA
+
+(4) à NÃO É UMA TUPLA
+
+(4,) à É UMA TUPLA 
+
+4, à É TUPLAS
+
+Tupla – tuple(range(11))
+
+Print(tupla)
+
+PODEMOS GERAR UMA TUPLA DINAMICAMENTE COM RANGE à (INICIO: FIM: PASSO)
+
+DESEMPACOTAMENTO DE TUPLA
+
+Tupla = (‘geek’, ‘university’,) TUPLA DE STRING
+
+Escola, curso = tupla
+
+Print(escola)
+
+Print(curso)
+
+OBS: GERA ERRO (ValueError) SE COLOCARMOS UM NÚMERO DIFERENTE DE ELEMENTOS PARA DESEMPACOTAR
+
+METODOS PARA ADIÇÃO E REMOÇÃO DE ELEMENTOS NAS TUPLAS NÃO EXISTEM, DADO O FATO DAS TUPLAS SEREM IMUTAVEIS
+
+**SOMA, VALOR MAXIMO, VALOR MINIMO,** TAMANHO
+
+**SE OS VALORES FOREM TODOS INTEIROS OU REAIS**
+
+Tupla = (1, 2, 3, 4, 5, 6)
+
+Print(sum(tupla)) à SOMA 21
+
+Print(max(tupla)) à VALOR MAXIMO 6
+
+Print(min(tupla)) à VALOR MINIMO 1
+
+Print(len(tupla)) à TAMANHO 6
+
+CONCATENAÇÃO DE TUPLAS
+
+Tupla1 = (1, 2, 3)
+
+Print(tupla1)
+
+Tupla2 = (4, 5, 6)
+
+Print(tupla2)
+
+Print(tupla1 + tupla2) à JUNTAS AS TUPLAS SEM ALTERAR
+
+TUPLAS SÃO IMUTAVEIS
+
+PARA ALTERAR
+
+Tupla3 = tupla1 + tupla2
+
+Print(tupla3) 
+
+QUER COLOCAR SO NA TUPLA 1
+
+Tupla1 = tupla1 + tupla2
+
+Print(tupla1)
+
+TUPLAS SÃO IMUTAVEIS, MAS PODEMOS SOBRESCREVER SEUS VALORES
+
+PODEMOS VERIFICAR SE DETERMINADO ELEMENTO ESTÁ CONTIDO NA TUPLA
+
+Tupla = (1, 2, 3) 
+
+Print(33 in tuple) à FALSO
+
+Print(3 in tuple) à VERDADEIRO
+
+INTERANDO SOBRE UMA TUPLA
+
+Tuple = (1, 2, 3)
+
+For n in tuple:
+
+----print(n)
+
+For indice, valor in enumarate(tupla):
+
+----print(índice, valor)
+
+CONTANDO ELEMENTOS DENTRO DE UMA TUPLA
+
+Tupla = (‘a’, ‘b’, ‘c’, ‘d’, ‘e’, ‘a’, ‘b’)
+
+Print(tupla.count(‘a’)) à COUNT à CONTA OS ELEMENTOS
+
+Escola = tuple(‘geek’)
+
+Print(escola)
+
+Print(escola.count(‘e’))
+
+DICAS NA ULTILIZAÇÃO DE TUPLAS
+
+DEVEMOS ULTILIZAR TUPLAS SEMPRE QUE NÃO PRECISAMOS MODIFICAR OS DADOS CONTIDOS EM UMA COLEÇÃO
+
+EXEMPLO 1
+
+Meses = (‘janeiro’, ‘fevereiro’)
+
+O ACESSO A ELEMENTOS DE UMA TUPLA TAMBEM É SEMELHANTE A DE UMA LISTA
+
+Print(meses[5])
+
+INTERAR COM WHILE
+
+I = 0
+
+While i  < len(meses)
+
+----print(meses[i])
+
+----i = i + 1
+
+VERIFICAMOS EM QUAL NÚMERO INDICE EM ELEMENTO ESTA NA TUPLA
+
+Print(meses.index(‘junho’))
+
+OBS: CASO O ELEMENTO NÃO EXISTE, SERÁ GERADO ERRO ValueERROR
+
+SLICING
+
+Tupla[inicio: fim: passo]
+
+Print(meses[5:9])
+
+PORQUE ULTILIZAR TUPLAS?
+
+TUPLAS SÃO MAIS RÁPIDAS DO QUE LISTAS
+
+TUPLAS DEIXAM SEU CÓDIGO MAIS SEGURO
+
+ISSO PORQUE TRABALHAR COM ELEMENTOS IMUTÁVEIS TRAZ SEGURANÇA PARA O CÓDIGO
+
+COPIANDO UMA TUPLA PARA OUTRA
+
+Tupla = (1, 2, 3)
+
+Print(tupla)
+
+Nova = tupla
+
+Outra = (4, 5, 6)
+
+Nova = nova + outra
+
+Print(nova)
+
+DICIONARIOS
+
+OBS: EM ALGUMAS LINGUAGENS DE PROGRAMAÇÃO, OS DICIONARIOS PYTHON SÃO CONHECIDOS POR MAPAS
+
+DICIONARIOS SÃO COLEÇOES DO TIPO CHAVE/ VALOR
+
+[0, 1, 2] CHAVE
+
+[1, 2, 3] VALOR
+
+DICIONÁRIOS SÃO REPRESENTADOS POR CHAVES
+
+Print(type({})) à {} dict (DICIONARIO)
+
+Países = {‘br’: ‘brasil’, ‘eua’: ‘estados unidos’}
+
+Print(países)
+
+Print(type(países))
+
+OBS: SOBRE DICIONARIOS
+
+CHAVE E VALOR SÃO SEPARADOS POR DOIS PONTOS ‘CHAVE’: ‘VALOR’
+
+TANTO CHAVE QUANTO VALOR PODEM SER DE QUALQUER TIPO DE DADO
+
+PODEMOS MISTURAR TIPOS DE DADOS
+
+**CRIAÇÃO DE DICIONARIOS**
+
+FORMA 1 (MAIS COMUM)
+
+Países = {‘br’: ‘Brasil’)
+
+Print(países)
+
+FORMA 2 (MENOS COMUM)
+
+Países = dict(br = ‘brasil’)
+
+Print(países)
+
+ACESSANDO ELEMENTOS
+
+FORMA 1 – ACESSANDO A CHAVE DA MESMA FORMA QUE LISTA/TUPLA
+
+Print(países[‘br’])
+
+Print(países[‘py’])
+
+OBS: CASO TENTAMOS FAZER UM ACESSO ULTILIZANDO UMA CHAVE QUE NÃO EXISTE, TEREMOS O ERRO KeyERROR
+
+FORMA 2 – ACESSANDO VIA GET – RECOMENDADO
+
+Print(países.get(‘br’))
+
+TIPO NONE
+
+O TIPO DE DADO None EM PYTHON REPRESENTA O TIPO SEM TIPO, OU CONHECIDO TAMBEM COMO TIPO VAZIO
+
+**OBS:**  O TIPO None SEMPRE É ESPECIFICADO COM A PRIMEIRA LETRA MAIUSCULA
+
+QUANDO ULTILIZAMOS:
+
+PODEMOS ULTILIZAR None QUANDO QUEREMOS CRIAR UMA VARIAVEL E INICIALIZA-LO COM UM TIPO SEM TIPO, ANTES DE RECEBERMOS UM VALOR FINAL
+
+**OBS:** O TIPO None SEMPRE VAI SER FALSE(FALSO)
+
+Países = {‘br’: ‘brasil’, ‘eua’: ‘estados unidos’}
+
+Pais = pais.get(‘py’)
+
+If pais:
+
+----print(f ’ENCONTREI O PAIS {pais}’)
+
+Else:
+
+----print(‘NÃO ENCONTREI O PAÍS’)
+
+Pais = países.get(‘ru’, ‘não encontrado’) à ‘NÃO ENCONTRADO’ SUBSTITUI O ANTERIOR ‘ru’ POIS NÃO TEM NA LISTA
+
+PODEMOS DEFINIR UM VALOR PADRÃO PARA O CASO NÃO ENCONTRARMOS O OBJETO COM A CHAVE INFORMADA
+
+CASO O get NÃO ENCONTRE O OBJETO COM A CHAVE INFORMADA SERÁ RETORNADO O VALOR None E NÃO SERA GERADO KeyError
+
+PODEMOS VERIFICAR SE DETERMINADA CHAVE SE ENCONTRA EM UM DICIONÁRIO
+
+If ‘ru’ in países
+
+----russia = paises[‘ru’]
+
+PODEMOS USAR QUALQUER TIPO DE DADO (int, float, string, booleano) INCLUSIVE LISTA, TUPLA E DICIONÁRIO, COMO CHAVES DE DICIONÁRIOS
+
+TUPLAS POR EXEMPL SÃO BASTANTE INTERESSANTES DE SEREM ULTILIZADAS COMO CHAVE DE DICIONÁRIOS, POIS AS MESMAS SÃO MUTÁVEIS
+
+ADICIONAR ELEMENTOS EM UM DICIONÁRIO
+
+FORMA 1
+
+Receita[‘abr’] = 350
+
+` `FORMA 2
+
+Novo\_dado = {‘mai’ : 500}
+
+Receita.update(novo\_dado) à O UPDATE JOGA O NOVO VALOR PARA A LISTA
+
+OU 
+
+Receita.update({‘mai’: 500})
+
+ATUALIZANDO DADOS EM UM DICIONARIO
+
+FORMA 1
+
+Receita[‘mai’] = 550 à ATUALIZA O VALOR
+
+FORMA 2
+
+Receita.update({‘mai’ : 600})
+
+CONCLUSÃO 1: A FORMA DE ADICIONAR NOVOS ELEMENTOS OU ATUALIZA DADOS EM UM DICIONARIO É A MASMA
+
+CONCLUSAO 2: EM DICIONARIO, NÃO PODEMOS TER CHAVES REPETIDAS
+
+REMOVER DADOS DE UM DICIONARIO
+
+FORMA 1 à MAIS COMUM
+
+Receita.pop(‘mar’)
+
+OBS: O QUE PRECISAMOS SEMPRE INFORMAR A CHAVE,  CASO NÃO ENCONTRE O ELEMENTO, UM KeyERROR SERÁ GERADO
+
+OBS 2: AO REMOVERMOS UM OBJETO O VALOR DESTE OBJETO É SEMPRE RETORNADO
+
+FORMA 2
+
+Del receita[‘fev’] à del à NÃO RETORNA VALOR
+
+IMAGINE QUE VOCE TEM UM COMERCIO ELETRONICO, ONDE TEMOS UM CARRINHO DE COMPRAS NA QUAL ADICIONAMOS PRODUTOS
+
+1- PODERIAMOS ULTILIZAR UMA LISTA PARA ISSO? SIM
+
+TERIAMOS QUE SABER QUAL É O INDICE DE CADA INFORMAÇÃO NO PRODUTO
+
+2- PODERIAMOS ULTILIZAR UMA TUPLA PARA ISSO? SIM
+
+3- PODERIAMOS USAR O DICIONARIO PARA ISSO? SIM
+
+Produto1 = {‘nome’: ’playstation’, ‘qtd’: 1, ‘preço’: 2300.00}
+
+Carrinho.append(produto)
+
+DESTA FORMA, FACILMENTE ADICIONAMOS OU REMOVEMOS PRODUTOS NO CARRINHO EM CADA PRODUTO PODEMOS TER A CERTEZA SOBRE CADA INFORMAÇÃO 
+
+METODOS DE DICIONÁRIOS
+
+D = dict(a=1, b=2, c=3)
+
+Print(d)
+
+Print(type(d))
+
+LIMPAR O DICIONÁRIO (GERAR DADOS
+
+d.clear( )
+
+print(d)
+
+COPIANDO UM DICIONARIO PARA OUTRO
+
+FORMA 1 à deep copy
+
+Novo = d.copy() à deep copy
+
+Print(novo)
+
+Novo[‘d’] = 4 à ADICIONA A CHAVE ‘D’ COM VALOR 4
+
+Print(d)
+
+Print(novo)
+
+FORMA 2 à shallow copy
+
+Novo = d
+
+Print(novo)
+
+Novo[‘d’] = 4
+
+Print(d)
+
+Print(novo)
+
+FORMA à NÃO USUAL DE CRIAÇÃO DE DICIONARIOS
+
+Outro = {}.fromkeys(‘a’, ‘b’)
+
+Print(outro)
+
+Print(type(outro))
+
+Usuário = {}.fromkeys([‘nome’, ‘pontos’, ‘email’, ‘profile’], ‘desconhecido’ )
+
+Print(outro)
+
+Print(type(outro))
+
+(‘nome’: ‘desconhecido’, ‘pontos’: ‘desconhecido’, ‘email’: ‘desconhecido’, ‘profile’: ‘desconhecido’)
+
+DESCONHECIDO VIROU O VALOR DE TODAS AS CHAVES
+
+O METODO FROMKEYS RECEBE DOIS PARAMETROS UM INTERAVEL E UM VALOR, ELE VAI GERAR PARA CADA VALOR DO INTERAVEL UMA CHAVE E IRÁ ATRIBUIR A ESTA CHAVE O VALOR INFORMADO
+
+Veja = {}.frokeys(‘teste’, ‘valor’)
+
+Print(veja)
+
+Veja = {}.fromkeys(range(1, 11), ‘novo’)
+
+Print(veja)
+
+
+MAPAS à CONHECIDOS EM PYTHON COMO DICIONARIOS
+
+` `DICIONARIOS EM PYTHON SÃO REPRESENTADOS POR {}
+
+INTERAR SOBRE DICIONARIOS
+
+For chave in receita:
+
+----print(chave)
+
+For chave in receita:
+
+----print(receita[chave])
+
+For chave in receita:
+
+----print(f’{chave} : {receita[chave]}’)
+
+For chave in receita:
+
+----print(f’{chave} recebi R$ {receita[chave]}’)
+
+Print(receita.keys()) à DICIONARIOS DE CHAVES dic.keys
+
+For chave in receita.keys() à FORMA PYTHONICA DE ACESSAR AS CHAVES
+
+----print(receita[chave])
+
+ACESSANDO OS VALORES
+
+Print(receita.values()) à VALUES MOSTRA O VALORES
+
+PODEMOS FAZER UM FOR EM CIMA DISSO ? SIM
+
+For valor in receita.values():
+
+----print(valor) à FORMA PYTHONICA DE ACESSAR OS VALORES
+
+DESEMPACOTAMENTO DE DICIONARIOS
+
+Print(receita.items())
+
+For chave, valor in receita.items()
+
+----print(f’chave={chave} e valor={valor}’)
+
+**SOMA, VALOR MAXIMO, VALOR MINIMO,** TAMANHO
+
+**SE OS VALORES FOREM TODOS INTEIROS OU REAIS**
+
+Print(sum(receita.values()))
+
+Print(max(receita.values()))
+
+Print(min(receita.values()))
+
+Print(len(receita))
+
+CONJUNTOS 
+
+CONJUNTOS EM QUALQUER LINGUAGEM DE PROGRAMACAO ESTAMOS FAZENDO TEORIA DOS CONJUNTOS DE MATEMATICA
+
+AQUI NO PYTHON OS CONJUNTOS SÃO CHAMADOS DE SETS
+
+DITO ISSO, DA MESMA FORMA QUE NA MATEMATICA
+
+\- SETS (CONJUNTOS) NÃO POSSUEM VALORES DUPLICADOS
+
+\- SETS (CONJUNTOS) NÃO POSSUEM VALORES ORDENADOS
+
+\- ELEMENTOS NÃO SÃO ACESSADOS VIA INDICE, OU SEJA, CONJUNTOS NÃO SÃO INDEXADOS
+
+CONJUNTOS SÃO BONS PARA SE ULTILIZAR QUANDO PRECISAMOS ARMAZERNAR ELEMENTOS MAS NÃO NOS IMPORTMOS COM A ORDENAÇAO DELES
+
+QUANDO NÃO PRECISAMOS SE PREOCUPAR COM CHAVES, VALORES E ITENS DUPLICADOS
+
+OS CONJUNTOS (SETS) SÃO REFERENCIADOS EM PYTHON COM CHAVES {}
+
+DIFERENÇA ENTRE CONJUNTOS (SET) E MAPAS (DICIONARIOS) EM PYTHON:
+
+\- UM DICIONARIO TEM CHAVE/VALOR:
+
+\- UM CONJUNTO TEM APENAS VALOR:
+
+DEFININDO UM CONJUNTO
+
+FORMA 1
+
+S = set({1, 2, 3, 4, 5, 6, 7, 2, 3}) à REPARE QUE TEMOS VALORES REPETIDOS
+
+Print(s)
+
+OBS: AO CRIAR UM COJUNTO, CASO SEJA ADICIONADO UM VALOR JÁ EXISTENTE O MESMO SERA IGNORADO SEM ERROR E NÃO FARA PARTE DO CONJUNTO
+
+FORMA 2 à MAIS COMUM
+
+S = {1, 2, 3, 4, 5, 5}
+
+Print(S)
+
+PODEMOS VERIFICAR SE DETERMINADO DOCUMENTO ESTA CONTIDO NO CONJUNTO
+
+if 3 in s:
+
+----print(‘tem o 3’)
+
+Else:
+
+----print(‘não tem o 3’)
+
+IMPORTANTE LEMBRAR QUE ALEM DE NÃO TERMOS VALORES DUPLICADOS NÃO TEMOS ORDEM
+
+LISTAS ACEITAM VALORES DUPLICADOS, ENTAO TEMOS 10 ELEMENTOS
+
+Lista = [99 , 2, 34, 23, 2, 12, 1, 44, 5, 34]
+
+Print(f’lista: {lista} com {len(lista)} elementos’)
+
+TUPLAS ACEITAM VALORES DUPLICADOS, ENTAO TEMOS 10 ELEMENTOS
+
+tupla = (99 , 2, 34, 23, 2, 12, 1, 44, 5, 34)
+
+Print(f’tupla: {tupla} com {len(tupla)} elementos’)
+
+DICIONARIOS NÃO ACEITAM VALORES DUPLICADOS, ENTAO TEMOS 8 ELEMENTOS
+
+Dicionário = {}.fromkeys([99 , 2, 34, 23, 2, 12, 1, 44, 5, 34], ‘dict’)
+
+Print(f’dicionario: {dicionario} com {len(dicionaario)} elementos’)
+
+CONJUNTOS NÃO ACEITAM VALORES DUPLICADOS, ENTAO TEMOS 8 ELEMENTOS
+
+conjunto = {99 , 2, 34, 23, 2, 12, 1, 44, 5, 34}
+
+Print(f’conjunto: {conjunto} com {len(conjunto)} elementos’)
+
+ASSIM COMO TODO OUTRO CONJUNTO EM PYTHON PODEMOS COLOCAR TIPOS DE DADOS MISTURADOS EM SETS
+
+PODEMOS INTERAR EM UM SET NORMALMENTE
+
+USOS INTERESSANTES COM SETS
+
+IMAGINE QUE FIZEMOS UM FORMULARIO DE CADASTRO DE VISITANTES EM UMA FEIRA OU MUSEU E OS VISITANTES INFORMAM MANUALMENTE A CIDADE DE ONDE VIERAM
+
+NOS ACIONAMOS CADA CIDADE EM UMA LISTA EM PYTHON, JÁ QUE EM UMA LISTA PODEMOS ADICIONAR NOVOS ELEMENTOS E TER REPETICAO
+
+
+
+
+AGORA PRECISAMOS SABER QUANTAS CIDADES DISTINTAS OU SEJA UNICAS TEMOS
+
+O QUE VOCE FARIA ? FARIA UM LOOP NA LISTA??
+
+PODEMOS ULTILIZAR O LEN PARA ISSO
+
+print(len(set(cidades)))
+
+ADICIONANDO ELEMENTOS EM UM CONJUNTO
+
+s = {1, 2, 3}
+
+s.add(4)
+
+s.add(4) à DUPLICIDADE NÃO GERA ERRO SIMPLESMENTE E IGNORADO E NÃO E ADICIONADO
+
+print(s)
+
+REMOVER ELEMENTOS EM UM CONJUNTO
+
+FORMA 1
+
+s.remove (3) NAO E INDICE INFOMAMOS O VALOR A SER REMOVIDO
+
+FORMA 2
+
+s.discard(2) à NÃO APRESENTA ERRO CASO O VALOR ESTEJA ERRADO
+
+METODOS MATEMATICOS DE CONJUNTOS
+
+IMAGINE QUE TEMOS DOIS CONJUNTOS UM CONTENDO ESTUDANTES DOS CURSO PYTHON E UM CONTENDO ESTUDANTES DO CURSO DE JAVA
+
+estudantes\_python = {‘marcos’, ‘patricia’, ‘ellen’, pedro, ‘julia’, ‘guilherme’}
+
+estudantes\_java = {‘fernando’, ‘gustavo’, ‘julia’, ‘ana’, ‘patricia’}
+
+
+VEJA QUE ALGUNS ALUNOS QUE ESTUDAM PYTHON TAMBEM ESTUDAM JAVA
+
+PRECISAMOS GERAR UM CONJUNTO COM NOMES DE ESTUDANTES UNICOS
+
+FORMA 1 à ULTILIZANDO UNION
+
+unicos = estudantes\_python.union(estudantes\_java)
+
+print(unicos)
+
+FORMA 2 à ULTILIZANDO O CARACTERE PIPE |
+
+unicos = estudantes\_python | estudantes\_java à FUNCIONA DA MESMA FORMA QUE O UNION
+
+PRECISAMOS GERAR UM CONJUNTO DE ESTUDANTES QUE ESTAO EM AMBOS OS CURSOS
+
+FORMA 1 à ULTIZANDO INTERSECTION
+
+ambos = estudantes\_python.intersection(estudantes\_java)
+
+FORMA 2 ULTILIZANDO O &
+
+ambos = estudantes\_python & estudantes\_java
+
+GERAR UM CONJUNTO DE ESTUDANTES QUE NÃO ESTAO NO OUTRO CURSO
+
+so\_python = estudantes\_python.difference(estudantes\_java)
+
+so\_java = estudantes\_java.difference(estudantes\_python)
+
+
+MODULO COLLECTIONS – COUNTER
+
+COLLECTIONS à HIGH-PERFORMANCE CONTAINER DATETYPES
+
+TIPO DE DADOS CONTAINER DE ALTA PERFORMANCER 
+
+COUNTER à RECEBE UM INTERAVEL COMO PARAMETRO E CRIA UM OBJETO DO TIPO COLLECTIONS COUNTER QUE E PARECIDO COM UM DICIONARIO CONTENDO COMO CHAVE O ELEMENTO DA LISTA PASSADA COM PARAMETRO E ACOMO O VALOR A QUANTIDADE DE OCORRENCIAS DESSE ELEMENTO
+
+ULTILIZANDO O COUNTER
+
+from collections import conter
+
+res = counter(lista)
+
+PARA CADA ELEMENTO DA LISTA O COUNTER CRIOU UMA CHAVE E COLOCOU COMO VALOR A QUANTIDADE DE OCORRENCIAS
+
+EXEMPLO 2
+
+print(counter(‘geek university’))
+
+EXEMPLO 3
+
+texto = “”” textoooooooooooooooooogojfgojsfgdfgojfdfsdafsdfasdfdasfsdfasdfdsgojdfgoj “””
+
+palavras = texto. split() 
+
+res = counter(palavras)
+
+ENCONTRANDO AS 5 PALAVRAS COM MAIS OCORRENCIA NO TEXTO
+
+print(res.most\_common(5))
+
+COLLECTIONS DEFAULT DICT
+
+DEFAULT DICT à AO CRIAR UM DICIONARIO ULTILIZANDO – O NOS INFORMAMOS UM VALOR DEFAULT, PODENDO ULTILIZAR UM LAMBDA PARA ISSO ESTE VALOR SERA ULTILIZADO SEMPRE QUE NÃO HOUVER UM VALOR DEFINIDO CASO TENTEMOS ACESSAR UMA CHAVE  QUE NÃO EXISTE ESSA CHAVE SERA CRIADA E O VALOR DEFAULT SERA ATRIBUIDO
+
+from collections import defaultdict
+
+dicionário = defauldict(lambda: 0)
+
+print(dicionário[‘outro’]) keyerror no dicionário comum mas aqui não
+
+
+MODULO COLLECTIONS: ORDERED DICT
+
+EM UM DICIONARIO COMUM A ORDEM DE INSERÇAO DOS ELEMENTOS NÃO E GARANTIDA
+
+from collections import ordereddict
+
+dicionario = OrderedDict
+
+ENTENDENDO A DIFERENCA ENTRE DICT E ORDERED DICT
+
+AS ORDEM DOS ELEMENTOS NO DICIONARIO NÃO IMPORTA
+
+NO ORDEREDDICT ELE DA FALSO PORQUE A ORDEM IMPORTA NO ORDERAEDDICT
+
+
+MODULO COLLECTIONS – NAMED TUPLE
+
+NAMED TUPLE à SÃO TUPLAS DIFERENCIADAS ONDE ESPECIFICAMOS UM NOME PARA A MESMA E TAMBEM PARAMETROS
+
+FROM COLLECTIONS IMPORT NAMEDTUPLE
+
+PRECISAMOS DEFINIR O NOME E PARAMETROS
+
+FORMA 1 – DECLARACAO NAMED TUPLE
+
+cachorro = namedtuple(‘cachorro’, ‘idade raca nome’)
+
+FORMA 2 – DECLARACAO NAMED TUPLE
+
+cachorro = namedtuple(‘cachorro’, ‘idade, raca, nome’)
+
+FORMA 3 - DECLARACAO NAMED TUPLE
+
+cachorro = namedtuple(‘cachorro’, [‘idade, raca, nome’])
+
+USANDO
+
+ray = cachorro(idade=2, raca=’chow’, nome=’ray’)
+
+print(ray)
+
+MODULO COLLECTIONS – DEQUE
+
+PODEMOS DIZER QUE O DEQUE E UMA LISTA DE ALTA PERFORMANCE 
+
+from collections import deque
+
+deq = deque(‘geek)
+
+ADICIONANDO ELEMENTOS NO DEQUE
+
+deq.append(‘y’)
+
+
+DEFININDO FUNCOES
+
+\- FUNCOES SÃO PEQUENOS TRECHOS DE CODIGO QUE REALIZAM TAREFAS ESPECIFICAS
+
+\- PODE OU NÃO RECEBER ENTRADAS DE DADOS E RETORNAR UMA SAIDA DE DADOS
+
+\- MUITO UTEIS PARA EXECUTAR PROCEDIMENTOS SIMILARES POR REPETIDAS VEZES
+
+OBS: SE VOCE ESCREVER UMA FUNÇAO QUE REALIZA VARIAS TAREFAS DENTRO DELA, E BOM VOCAE FAZER UMA VERIFICAÇÃO PARA QUE A FUNÇÃO SEJA SIMPLIFICADA 
+
+JÁ ULTILIZAMOS VARIAS FUNCOES DESDE QUW INICIAMOS ESTE CURSO
+
+\- print()
+
+\- len()
+
+\- max()
+
+\- min()
+
+\- count()
+
+E MUITAS OUTRAS
+
+EXEMPLO DE ULTILIZAÇAO DE FUNCOES
+
+ULTILIZANDO A FUNÇAO INTEGRADA (BUILT-IN) DO PYTHON PRINT()
+
+Curso.append(‘mais dados’) à **AttributeError**
+
+Print(Curso)
+
+Cores.clear() à LIMPA
+
+DRY – DONT REPEAT YOURSELF – NAO REPITA VOCE MESMO / NAO REPITA SEU CODIGO
+
+MAS ENTAO COMO DEFINIR FUNÇOES
+
+EM PYTHON A FORMA GERAL DE DEFINIR UMA FUNÇAO É
+
+def nome\_da\_funcao(parametros\_de\_entrada):
+
+\_\_\_\_bloco\_da\_funcao
+
+ONDE 
+
+nome\_da\_fucao à SEMPRE, COM LETRAS MINUSCULAS E SE FOR NOME COMPOSTO SEPARADO POR UNDERLINE (SNAKE CASE)
+
+parametros\_de\_entrada à OPCIONAIS, ONDE TENDO MAIS DE UM, CADA UM SEPARADO POR VIRGULA, PODENDO SER OPCIONAIS OU NÃO
+
+bloco\_da\_funçao à TAMBEM CHAMADO DE CORPO DA FUNÇAO OU IMPLEMENTAÇAO E ONDE O PROCESSAMENTO DA FUNCAO ACONTECE. NESTE BLOCO PODE TER OU NÃO RETORNO DA FUNÇAO
+
+OBS: VEJA QUE PARA DEFINIR UMA FUNÇAO ULTILIZAMOS A PALAVRA RESERVADA ‘def’ INFORMANDO AO PYTHON QUE ESTAMOS DEFININDO UMA FUNÇAO. TAMBEM ARBRIMOS O BLOCO DE CODIGO COM O JÁ CONHECIDO DOIS PONTOS : QUE E ULTILIZADO EM PYTHON PARA DEFINIR BLOCOS
+
+DEFININDO A PRIMEIRA FUNÇÃO
+
+DEFINIÇAO
+
+def diz\_oi():
+
+----print(‘oi’)
+
+OBS
+
+1. VEJA QUE DENTRO DAS NOSSAS FUNÇOES PODEMOS ULTILIZAR OUTRAS FUNÇOES
+1. VEJA QUE NOSSA FUNÇAO SO EXECUTA 1 TAREFA, OU SEJA A ÚNICA COISA QUE ELA FAZ É DIZER OI
+1. VEJA QUE ESTA FUNÇAO NÃO RECEBE NENHUM PARAMETRO DE ENTRADA
+1. VEJA QUE ESTA FUNÇÃO NÃO RETORNA NADA
+
+ULTILIZANDO FUNÇOES
+
+CHAMADA DE EXECUÇÃO
+
+diz\_oi() à PRECISAMOS ABRIR E FECHAR O PARENTESES AO EXECUTAR UMA FUNÇAÕ
+
+EXEMPLO
+
+ERRADO
+
+diz\_oi
+
+CERTO
+
+diz\_oi()
+
+ERRADO
+
+diz\_oi () à NÃO EXISTE ESPAÇO
+
+EXEMPLO 2
+
+def cantar\_parabens():
+
+----print(‘Parabens pra você’)
+
+----print(‘Nesta data querida’)
+
+----print(‘muitas felicidades’)
+
+----print(‘muitos anos de vida’)
+
+----print(‘viva o aniversariante’)
+
+cantar\_parabens() à EXECUTA A FUNÇAO
+
+for n in range(5):
+
+----cantar\_parabens()
+
+EM PYTHON PODEMOS INCLUSIVE CRIAR VARIAVEIS DO TIPO DE UMA FUNÇAO E EXECUTAR ESTA FUNÇÃO ATRAVES DA VARIAVEL
+
+canta = cantar\_parabens à NÃO É COMUM EM OUTRAS LINGUAGENS DE PROGRAMAÇÃO
+
+canta()
+
+FUNÇOES COM RETORNO
+
+números = [1, 2, 3]
+
+ret\_pop = números.pop()
+
+print(f’retorno de pop: {ret\_pop}’)
+
+ret\_pr = print(números)
+
+print(f’retorno de print {ret\_pr}’)
+
+EXEMPLO FUNÇÃO
+
+def quadrado\_de\_7():
+
+----print(7  \* 7) à NÃO ESTA RETORNANDO
+
+ret = quadrado\_de\_7()
+
+print(f’retorno {ret}’) à NÃO RETORNA NADA
+
+OBS: EM PYTHON QUANDO UMA FUNÇAO NÃO RETORNA NENHUM VALOR O RETORNO É None
+
+VAMOS REFATORAR ESTA FUNÇÃO PARA QUE ELA RETORNE O VALOR
+
+REFATORAR - REESCREVER/EDITAR/MODIFICAR A FUNÇÃO/CÓDIGO
+
+def quadrado\_de\_7():
+
+----return 7  \* 7 à RETURN É USADO PARA RETORNAR
+
+ret = quadrado\_de\_7()
+
+print(f’retorno {ret}’)
+
+print(f’retorno: {quadrado\_de\_7()}’) à CRIA O RETORNO SEM PRECISAR CRIAR UMA VARIAVEL, E PODEMOS CRIAR OPERAÇÕES
+
+EXEMPLO: print(f’retorno: {quadrado\_de\_7() + 1}’)
+
+OBS: FUNÇOES PYTHON QUE RETORNAR VALORES, DEVEM RETORNAR ESTES VALORES COM A PALAVRA RESERVADA return
+
+OBS: NÃO PRECISAMOS NECESSARIAMENTE CRIAR UMA VARIAVEL PARA RECEBER O RETORNO DE UMA FUNÇÃO. PODEMOS PASSAR A EXECUÇÃO DA FUNÇÃO PARA OUTRAS FUNÇOES
+
+REFATORANDO A PRIMEIRA FUNÇAO
+
+def diz\_oi():
+
+----return ‘oi’
+
+print(diz\_oi()) 
+
+VANTAGEM DE COLOCAR RETURN EM UMA FUNÇAO
+
+DÁ PARA FAZER OPERAÇOES MATEMATICAS
+
+OBS: SOBRE A PALAVRA RESERVADA return
+
+1. ELA FINALIZA A FUNÇAO, OU SEJA, ELA SAI DA EXECUÇÃO DA FUNÇÃO
+1. PODEMOS TER, EM UMA FUNÇÃO, DIFERENTES returns
+1. PODEMOS EM UMA FUNÇAO, RETORNA QUALQUER TIPO DE DADO E ATE MESMO MULTIPLOS VALORES
+
+EXEMPLOS 1 - ELA FINALIZA A FUNÇAO, OU SEJA, ELA SAI DA EXECUÇÃO DA FUNÇÃO
+
+def diz\_oi():
+
+----return ‘oi’
+
+----print(‘ESTOU SENDO EXECUTADO APÓS O RETORNO...’) à ELA NÃO APARECERAR POIS O RETURN FINALIZA A FUNÇÃO
+
+print(diz\_oi()) 
+
+EXEMPLO 2 - PODEMOS TER, EM UMA FUNÇÃO, DIFERENTESA returns
+
+def nova\_funcao():
+
+----variavel = True
+
+----if variavel:
+
+--------return 4
+
+----elif variável is None:
+
+--------return 3.2
+
+----return ‘b’
+
+print(nova\_funcao())
+
+EXEMPLO 3 - PODEMOS EM UMA FUNÇAO, RETORNA QUALQUER TIPO DE DADO E ATE MESMO MULTIPLOS VALORES
+
+def outra\_fucao()
+
+----return 2, 3, 4, 5
+
+num1, num2, num3, num4 = outra\_funcao()
+
+print(num1, num2, num3, num4)
+
+print(outra\_funcao())
+
+VAMOS CRIAR UMA FUNÇAO PARA JOGAR A MOEDA
+
+from random import random
+
+def joga\_moeda()
+
+----#GERA UM NUMERO PSEUDO-RANDOMICO ENTRE 0 E 1
+
+----valor = random()
+
+----if valor > 0.5:
+
+--------return ‘cara’
+
+----return ‘coroa’
+
+print(joga\_moeda())
+
+def joga\_moeda()
+
+----if random() > 0.5:
+
+--------return ‘cara’
+
+----return ‘coroa’
+
+ERROS COMUNS NA ULTILIZAÇAO DO RETORNO QUE NA VERDADE NEM E ERRO MAS SIM CODIFICAÇAO DESNECESSARIA
+
+
+FUNÇOESA COM PARAMETRO (DE ENTRADA)
+
+\- FUNÇOES QUE RECEBEM DADOS PARA SEREM PROCESSADOS DENTRO DA MESMA
+
+SE A GENTE PENSAR EM UM PROGRAMA QUALQUER, GERALMENTE TEMOS:
+
+ENTRADA à PROCESSAMENTO à SAIDA
+
+SE A GENTE PENSAR EM UMA FUNÇAO, JÁ SABEMOS QUE TEMOS FUNÇÕES QUE:
+
+\- NÃO POSSUEM ENTRADA
+
+\- NÃO POSSUEM SAIDA
+
+\- POSSUEM ENTRADA MAS NÃO POSSUEM SAIDA
+
+\- NÃO POSSUEM ENTRADA MAS POSSUEM SAIDA
+
+\- POSSUEM ENTRADA E SAIDA
+
+REFATORANDO UMA FUNÇÃO
+
+def quadrado(numero):
+
+----return numero \* numero
+
+print(quadrado(7))
+
+ret = quadrado(6)
+
+print(ret)
+
+print(quadro()) – TypeError
+
+
+REFATORANDO A FUNÇÃO
+
+def cantar\_parabens(aniversariante):
+
+----print(‘Parabens pra você’)
+
+----print(‘Nesta data querida’)
+
+----print(‘muitas felicidades’)
+
+----print(‘muitos anos de vida’)
+
+----print(f‘viva o {aniversariante}’)
+
+cantar\_parabens(‘Marcos’)
+
+OBS: FUNÇOES PODEM TER N PARAMETROS DE ENTRADA. OU SEJA, PODEMOS RECEBER COMO ENTRADA EM UMA FUNÇÃO QUANTOS PARAMETROS FOREM NECESSARIOS ELES SÃO SEPARADOS POR VIRGULA
+
+EXEMPLO
+
+def soma(a, b):
+
+----return a + b
+
+def multiplica(num1,, num2):
+
+----return num1 \* num2
+
+def outra(num1, b, msg):
+
+----return (num1 + b) \* msg
+
+print(soma(2, 5))
+
+print(soma(10, 20))
+
+print(multiplica(4, 5))
+
+print(multiplica(2, 8))
+
+print(outra(3, 2, ‘Geek ‘))
+
+
+OBS: SE A GENTE INFORMAR UM NUMERO ERRADO DE PARAMETRO OU ARGUMENTOS, TEREMOS TypeError
+
+print(soma(2, 3, 4)) à TypeError – PASSANDO ARGUMENTOS A MAIS
+
+print(soma(4)) à TypeError – PASSANDO ARGUMENTOS A MENOS
+
+NOMEANDO PARAMETROS
+
+def nome\_completo(nome, sobrenome):
+
+----return f’Seu nome completo é {nome} {sobrenome}’
+
+print(nome\_completo(‘Angelina’, ‘Jolie’))
+
+A DIFERENÇA ENTRE PARAMETROS E ARGUMENTOS
+
+PARAMETROS SÃO VARIAVEI DECLARADAS NA DEFINICAO DE UMA FUNÇAO
+
+ARGUMENTOS SÃO DADOS PASSADOS DURANTE A EXECUÇAO DE UMA FUNÇAO
+
+A ORDEM DOS PARAMETROS IMPORTA
+
+ARGUMENTOS NOMEADOS (Keyword Arguments)
+
+CASO ULTILIZEMOS NOMES DOS PARAMETROS NOS ARGUMENTOS PARA INFORMA-LOS, PODEMOS ULTILIZAR QUALQUER ORDEM
+
+print(nome\_completo(nome=’Angelina’, sobrenome=’Jolie’))
+
+print(nome\_completo(nome=nome, sobrenome=sobrenome))
+
+print(nome\_completo(sobrenome=’Marques’, nome=’Marcia’))
+
+ERRO COMUM NA ULTILIZAÇAO DO RETURN	
+
+def soma\_impares(numeros):
+
+----total = 0
+
+----for num in numeros:
+
+--------if num % 2 != 0:
+
+------------total = total + num
+
+----return total
+
+lista = [1, 2, 3, 4, 5, 6, 7]
+
+print(soma\_impares(lista))
+
+FUNÇOES COM PARAMETRO PADRAO (DEFAULT PARAMTERS)
+
+\- FUNÇÕES ONDE A PASSAGEM DE PARAMETRO SEJA OPCIONAL
+
+EXEMPLO DE FUNÇAO ONDE A PASSAGEM DE PARAMETRO SEJA OPCIONAL
+
+print(‘geek university’)
+
+print()
+
+EXEMPLO DE FUNÇAO ONDE A PASSAGEM DE PARAMETRO SEJA OBRIGATORIA
+
+def quadrado(numero):
+
+----return numero \*\* 2
+
+print(quadrado(3))
+
+print(quadrado()) #TYPE ERROR à PARAMETRO OBRIGATORIO
+
+def exponencial(numero, potencial=2):
+
+----return numero \*\* potencia
+
+print(exponencial(2, 3))
+
+print(exponencial(3)) à POR PADRAO ELEVE AO QUADRADO print(exponencial(3, 5)) ELEVA A POTENCIA INFORMADA PELO USUARIO
+
+OBS: SE O USUARIO PASSAR SOMENTE 1 ARGUMENTO, ESTE SERA ATRIBUIDO AO PARAMETRO NUMERO, E SERA CALCULADO O QUADRADO DESTE NUMERO
+
+SE O USUARIO PASSAR 2 ARGUMENTOS, O PRIMEIRO SERA ATRIBUIDO AO PARAMETRO NUMERO E O SEGUNDO AO PARAMETRO POTENCIA, ENTÃO SERA CALCULADA ESTA POTENCIA
+
+OBS: EM FUNÇOES PYTHON, OS PARAMETROS COM VALORES DEFAULT(PADRAO) DEVEM SEMPRE ESTAR AO FINAL DA DECLARAÇÃO
+
+ERRO
+
+def teste(num=2, potencia): à VALOR TEM QUE SER DEPOIS à def teste(potencia, num=2) à ASSIM NÃO DARA ERRO
+
+----return num \*\* potencia
+
+print(teste(6))
+
+OUTROS EXEMPLOS
+
+def soma(num1, num2): à TEREMOS QUE COLOCAR UM VALOR (num1=5, num2=3)
+
+----return num1 + num2
+
+print(soma(4, 3))
+
+print(soma(4)) à TypeError
+
+` `print(soma() à TypeError
+
+EXEMPLO MAIS COMPLEXO
+
+def mostra\_informacao(nome=’Geek’, instrutor=False):
+
+----if nome == ‘Geek’ and instrutor:
+
+--------return ‘Bem-Vindo instructor Geek!’
+
+----elif nome == ‘geek’
+
+--------return ‘eu pensei que voce era o instrutor’
+
+----return f’Olá {nome}’
+
+print(mostra\_informarcao())
+
+print(mostra\_informarcao(instrutor=True))
+
+print(mostra\_informarcao(‘Ozzy’))
+
+PORQUE ULTILIZAR PARAMETROS COM VALOR DEFAULT?
+
+\- NOS PERMITE SER MAIS FLEXIVEIS NAS FUNÇOES
+
+\- EVITA ERROS COM PARAMETROS INCORRETOS
+
+\- NOS PERMITE TRABALHAR COM EXEMPLOS MAIS LEGIVEIS DE CODIGO
+
+QUAIS TIPOS DE DADOS PODEMOS ULTILIZAR COMO VALORES DEFAULT PARA PARAMETROS
+
+\- QUALQUER TIPO DE DADO:
+
+à NUMEROS, STRING, FLOATS, BOOLEANOS, LISTAS, TUPLAS, DICIONARIOS, FUNÇOES E (ETC)
+
+EXEMPLOS
+
+def soma(num1, num2)
+
+----return num1 + num2
+
+def mat(num1, num2, fun=soma):
+
+----return fun(num1, num2)
+
+def subtração(num1, num2):
+
+----return num1 – num2
+
+print(mat(2, 3))
+
+print(mat(2, 2, subtração))
+
+
+ESCOPO – EVITAR PROBLEMAS E CONFUSOES
+
+\- VARIAVEIS GLOBAIS
+
+\- VARIAVEIS LOCAIS
+
+instrutor = ‘Geek’ – VARIAVEL GLOBAL à PORQUE NÃO FAZ ESCOPO DE NENHUMA VARIAVEL
+
+instrutor = ‘Geek’
+
+def diz\_oi():
+
+----instrutor = ‘python’ à VARIAVEL LOCAL
+
+----return f’oi {instrutor}’
+
+OBS: SE TIVERMOS UMA VARIAVEL LOCAL COM O MESMO NOME DE UMA VARIAVEL GLOBAL, A LOCAL TERA PREFERENCIA
+
+def diz\_oi():
+
+----prof = ‘Geek’ à VARIAVEL LOCAL
+
+----return f’Ola {prof}’
+
+print(diz\_oi())
+
+print(prof) à IRA DAR ERROR (NameError) PORQUE PROF É UMA VARIAVEL LOCAL E ESSE PRINT ESTA SENDO EXECUTADO FORA DA FUNÇAO
+
+
+ATENÇÃO COM VARIAVEIS GLOBAIS (SE PUDER EVITAR, EVITE)
+
+total = 0
+
+def incrementa():
+
+----total = total + 1 à UnboundLocalError( A VARIAVEL LOCAL ESTA SENDO ULTILIZADA PARA PROCESSAMENTO SEM TER SIDO INICIALIZADA)
+
+----return total
+
+print(incrementa())
+
+REFATORANDO PARA  A FORMA CERTA
+
+def incrementa():
+
+----global total à AVISANDO QUE QUEREMOS ULTILIZAR A VARIAVEL GLOBAL
+
+----total = total + 1 à UnboundLocalError( A VARIAVEL LOCAL ESTA SENDO ULTILIZADA PARA PROCESSAMENTO SEM TER SIDO INICIALIZADA)
+
+----return total
+
+PODEMOS TER FUNÇOES QUE SÃO DECLARADAS DENTRO DE FUNCOES, E TAMBEM TEM UMA FORMA ESPECIAL DE ESCOPO DE VARIAVEL
+
+def fora():
+
+----contador = 0
+
+----def dentro():
+
+--------nonlocal contador
+
+--------contador = contador + 1
+
+--------return contador
+
+----return dentro()
+
+print(fora())
+
+print(dentro()) à NameError PORQUE DENTRO ESTA DENTRO DA FUNÇÃO
+
+DOCUMENTANDO FUNÇÕES COM DOCSTRINGS
+
+OBS: PODEMOS TER ACESSO A DOCUMENTAÇAO DE UMA FUNÇÃO EM PYTHON ULTILIZANDO A PROPRIEDADE ESPECIAL \_\_doc\_\_
+
+PODEMOS AINDA FAZER ACESSO A DOCUMENTAÇÃO COM A FUNÇÃO help()
+
+EXEMPLOS
+
+def diz\_oi():
+
+----“””uma função simples que retorna a string ‘oi! ”””
+
+----return ‘oi!’
+
+def exponencial(numero, potencia=2);
+
+----“””
+
+----Função que retorna por padrão o quadrado de ‘numero’ ou ‘numero’ á ‘potencia’ informada
+
+----:param numero: Numero que desejamos gerar o exponencial
+
+----:param potencia: Potencia que queremos gerar o exponencial. Por padrão é 2
+
+----:return: Retorna o exponencial de ‘nume’ por ‘potencia’
+
+----“””
+
+----return numero \*\* potencia
+
+
+ENTENDENDO O ARGS
+
+ENTENDENDO O \*args
+
+\- O \*args É UM PARÂMETRO, COMO OUTRO QUALQUER. ISSO SIGNIFICA QUE VOCE PODERA CHAMAR DE QUALQUER COISA, DESDE QUE VOCE COMECE COM ASTERISCO
+
+EXEMPLO:
+
+\*xis
+
+MAS POR CONVENÇÃO, ULTILIZAMOS \*args PARA DEFINÍ-LO
+
+MAS O QUE É O \*args?
+
+O PARÂMETRO \*args ULTILIZADO EM UMA FUNÇÃO, COLOCA OS  VALORES EXTRAS INFORMADOS COMO ENTRADA EM UMA TUPLA. ENTÃO DESDE JÁ LEMBRE-SE QUE TUPLAS SÃO IMUTAVEIS
+
+EXEMPLOS
+
+def soma\_todos\_numeros(num1, num2, num3):
+
+----return num1 + num2 + num3
+
+print(soma\_todos\_numeros(4, 6, 9))
+
+
+ENTENDENDO O args
+
+def soma\_todos\_numeros(\*args):
+
+----total = 0
+
+----for numero in args:
+
+--------total = total + numero
+
+----return total
+
+print(soma\_todos\_valores(3, 4, 5, 6)) à 18
+
+
+MELHOR
+
+def soma\_todos\_numeros(\*args):
+
+----return sum(args)
+
+OUTRO EXEMPLO DE ULTILIZAÇÃO \*args
+
+def verifica\_info(\*args):
+
+----if ‘Geek’ in args and ‘university’ in args:
+
+--------return ‘bem- vindo Geek’
+
+-----return ‘Eu nao tenho certeza quem você é’
+
+print(verifica\_info())
+
+print(verifica\_info(1, True, ‘University’, ‘Geek’))
+
+print(verifica\_info (1, ‘University’, 3.145))
+
+
+def soma\_todos\_numeros(\*args):
+
+----return sum(args)
+
+numeros = [1, 2, 3, 4, 5, 6, 7]
+
+DESEMPACOTADOR
+
+print(soma\_todos\_numeros(\*numeros))
+
+OBS: O ASTERICO SERVE PARA QUE INFORMEMOS AO PYTHON QUE ESTAMOS PASSANDO COMO ARGUMENTO UMA COLEÇÃO DE DADOS. DESTA FORMA, ELE SABERÁ QUE PRECISARA ANTES DESEMPACOTAR ESTES DADOS
+
+NÃO FUNCIONA EM DICIONARIOS
+
+ENTENDENDO \*\*kwargs
+
+PODERIAMOS CHAMAR ESTE PARAMETRO DE \*\*xis, MAS POR CONVENÇÃO CHAMAMOS DE \*\*kwargs
+
+ESTE E SO MAIS UM PARAMETRO, MAS DIFERENTO DO \*args QUE COLOCA OS VALORES EXTRAS EM UMA TUPLA, O \*\*kwargs EXIGE QUE UTILIZEMOS PARÂMETROS NOMEADOS, E TRANSFORMA ESSES PARÂMETROS EXTRAS EM UM DICIONÁRIO
+
+EXEMPLO
+
+def cores\_favoritas(\*\*kwargs))
+
+----for pessoa, cor in kwargs.items():
+
+--------print(f’A cor favorita de {pessoa.title()} é {cor}’)
+
+cores\_favoritas(marcos=’verde’, julia=’amarelo’, fernanda=’azul’, vanessa=’branco’)
+
+OBS: OS PARAMETROS \*args E \*\*kwargs NÃO SÃO OBRIGATÓRIOS
+
+EXEMPLO MAIS COMPLEXO
+
+def cumprimento\_especial(\*\*kwargs):
+
+----if ‘geek’ in kwargs and kwargs[‘geek’] == ‘python’:
+
+--------return ‘você recebeu um cumprimento Pythonico’
+
+----elif ‘geek’ in kwargs:
+
+--------return f”{kwargs[‘geek’]} Geek!”
+
+----return ‘Não tenho Certeza quem você é’
+
+print(cumprimento\_especial())
+
+print(cumprimento\_especial(geek=’python’))
+
+print(cumprimento\_especial(geek=’oi’))
+
+print(cumprimento\_especial(geek=’especial’))
+
+
+NAS NOSSAS FUNÇÕES, PODEMOS TER(nesta ordem):
+
+\- PARAMETROS OBRIGATORIOS;
+
+\- \*args;
+
+\- PARÂMETROS DEFAULT (NÃO OBRIGATORIOS);
+
+\- \*\*kwargs;
+
+def minha\_funcao(num, idade, \*args, solteiro=False, \*\*kwargs):
+
+----print(f’{nome} tem {idade} anos’)
+
+----print(args)
+
+----if solteiro:
+
+--------print(‘Solteiro’)
+
+----else:
+
+--------print(‘Casado’)
+
+----print(kwargs)
+
+minha\_funcao(8, ‘julia’)
+
+minha\_funcao(18, ‘felicity’, 4, 5, 3, solteiro=True)
+
+minha\_funcao(34, ‘felipe’, eu=’não’, você=’vai’)
+
+minha\_funcao(19, ‘Carla’, 9, 4, 3, java=False, python=True)
+
+ENTENDA POR QUE É IMPORTANTE MANTER A ORDEM DOS PARAMETROS NA DECLARAÇÃO
+
+def mostra\_indo(a, b, \*args, instrutor=’Geek’, \*\*kwargs):
+
+----return [a, b, args, instructor, kwargs]
+
+‘’’
+
+a = 1
+
+b = 2
+
+args = (3,)
+
+instructor = ‘Geek’
+
+kwargs = {‘sobrenome’ : ‘university’, ‘cargo’: ‘instrutor’}
+
+‘’’
+
+print(mostra\_info(1, 2, 3, sobrenome=’university’, cargo=’instrutor’))
+
+
+DESEMPACOTAR COM \*\*kwargs
+
+def mostra\_nomes(\*\*kwargs):
+
+----return f”{kwargs[‘nome’]} {kwargs[‘sobrenome’]}”
+
+nomes = {‘nome’: ‘felicity’, ‘sobrenome’: ‘Jones’}
+
+print(mostra\_nomes(\*\*nomes))
+
+
+OBS: OS NOMES DA CHAVE EM UM DICIONARIO DEVEM SER OS MESMO DOS PARAMETROS DA FUNÇÃO
+
+COMPREHENSIONS EM PYTHON
+
+LIST COMPREHENSION
+
+\- ULTILIZANDO LIST COMPREHENSION NÓS PODEMOS GERAR NOVAS LISTAS COM DADOS PROCESSADOS A PARTIR DE OUTRO ITERÁVEL
+
+-SINTAXE DA LIST COMPREHENSION
+
+[ dado for dado in interável ]
+
+EXEMPLOS 
+
+numeros = {1, 2, 3, 4, 5]
+
+res = [numero \* 10 for numero in numeros]
+
+print(res)
+
+
+
+
+PARA ENTENDER MELHOR O QUE ESTA ACONTECENDO DEVEMOS DIVIDIR A EXPRESSÃO EM DUAS PARTES:
+
+\- A PRIMEIRA PARTE: for numero in numeros
+
+\- A SSEGUNDA PARTE: NUMERO \* 10
+
+res – [numero / 2 for numero in numeros]
+
+print(res)
+
+def funcao(valor):
+
+----return valor \* valor
+
+res = [funcao(numero) for numero in numeros]
+
+print(res)
+
+
+LIST COMPREHENSION VERSOS LOOP
+
+LOOP
+
+numeros = [1, 2, 3, 4, 5]
+
+numeros\_dobrados = []
+
+for numero in numeros:
+
+----numero\_dobrado = numero \* 2
+
+----numeros\_dobrados.append(numero\_dobrado
+
+print(numeros\_dobrados)
+
+
+LIST COMPREHENSION
+
+print([numero \* 2 for numero in numeros])
+
+OUTROS EXEMPLOS
+
+EXEMPLO 1
+
+nome = ‘geek university’
+
+print([letra.upper() for letra in nome])
+
+EXEMPLO 2
+
+def caixa\_alta(nome):
+
+----nome = nome.replace(nome[0], nome[0].upper())
+
+----return nome
+
+amigos = [‘maria’, ‘julia’, ‘pedro’, ‘guilherme’, ‘vanessa’]
+
+print([amigo for amigo in amigos])
+
+EXEMPLO 3
+
+print([numero \* 3 for numero in range(1, 10)])
+
+EXEMPLO 4
+
+print([bool(valor) for valor in [0, [], ‘’, True, 1, 3.14]])
+
+EXEMPLO 5
+
+print([str(numero) for numero in [1, 2, 3, 4, 5]])
+
+LIST COMPREHENSION PARTE 2
+
+` `NOS PODEMOS ADICIONAR ESTRUTURAS CONDICIONAIS LÓGICAS ÁS NOSSAS LIST COMPREHENSION
+
+EXEMPLOS 
+
+1
+
+numeros = [1, 2, 3, 4, 5, 6]
+
+pares = [numero for numero in numeros if numero % 2 == 0]
+
+impares = [numero for numero in numeros if numero % 2 != 0]
+
+print(pares)
+
+print(impares)
+
+REFATORAR
+
+QUALQUER NUMERO PAR MODULO DE 2 É 0 E 0 EM PYTHON É False. not False = True
+
+pares = [numero for numero in numeros if not numero % 2]
+
+QUALQUER NUMERO IMPAR MODULO DE 2 É 1, E 1 EM PYTHON É True
+
+impares = [numero for numero in numeros if numero % 2]
+
+print(pares)
+
+print(impares)
+
+LISTAS ALINHADAS (nested listas)
+
+\- ALGUMAS LINGUAGENS DE PROGRAMAÇÃO POSSUEM UMA ESTRUTURA DE DADOS CHAMADAS DE ARRAYS:
+
+à UNIDIMENSIONAIS (ARRAYS/VETORES:
+
+- MULTIDIMENSIONAIS (MATRIZES):
+
+EM PYTHON NÓS TEMOS AS LISTAS
+
+numeros = [1, 2, 3, 4, 5,]
+
+EXEMPLOS
+
+listas = [[1, 2, 3], [4, 5, 6,], [7, 8, 9]] à MATRIZ 3 X 3
+
+print(listas)
+
+COMO FAZEMOS PARA ACESSAR OS DADOS
+
+print(listas[0][1])
+
+0 à LINHAS
+
+1 à COLUNA/ ACESSO AO NUMERO 2
+
+ITERANDO COM LOOPS EM UMA LISTA ANINHADA
+
+for list in listas:
+
+----for num in lista:
+
+--------print(num)
+
+LIST COMPREHENSION
+
+[[print(valor) for valor in lista] for lista in listas]
+
+OUTROS EXEMPLOS 
+
+GERANDO UM TABULEIRO/MATRIX 3X3
+
+tabuleiro = [[numero for numero in range(1, 4)] for valor in range(1, 4)]
+
+print(tabuleiro)
+
+GERANDO JOGADAS PARA O JOGO DA VELHA
+
+velha = [[‘X’ if numero % 2 == 0 else ‘0’ for numero in range(1, 4)] for valor in range(1, 4)]
+
+print(velha)
+
+GERANDO VALOR INICIAIS
+
+print([[‘\*’ for i in range(1, 4)] for j in range(1, 4)])
+
+
+DICTIONARY COMPREHENSION
+
+PENSE NO SEGUINTE
+
+SE QUISERMOS CRIA UMA LISTA FAZEMOS
+
+lista = [1, 2, 3, 4]
+
+SE QUISERMOS CRIAR UMA TUPLA:
+
+tupla =(1, 2, 3, 4) #1, 2, 3, 4
+
+SE QUISERMOS CRIAR UM SET(CONJUNTO)
+
+conjunto = {1, 2, 3, 4}
+
+SE QUISERMOS CRIAR UM DICIONARIO
+
+dicionário = { ‘a’: 1, ‘b’: 2, ‘c’: 3}
+
+SINTAXY
+
+{chave:valor for valo in iterável}
+
+[valor for valor in iteravel]
+
+EXEMPLOS
+
+numeros = { ‘a’: 1, ‘b’: 2, ‘c’: 3}
+
+quadrado = {chave:valor \*\* 2 for chave, valor in numeros.items()}
+
+print(quadrado)
+
+numero = [1, 2, 3, 4, 5]
+
+quadrados = {valor: valor \*\* 2 for valor in numeros}
+
+print(quadrados)
+
+
+chaves = ‘abcde’
+
+valores = [1, 2, 3, 4, 5]
+
+mistura = {chaves[i]: valores[i] for i in range(0, len(chaves))}
+
+print(mistura)
+
+EXEMPLO COM LOGICA CONDICIONAL
+
+numeros = [1, 2, 3, 4, 5]
+
+res = {num: (‘par’ if num % 2 == 0 else ‘impar’) for num in numeros}
+
+print(res)
+
+SET COMPREHENSION
+
+set = {}
+
+EXEMPLOS
+
+numeros = {num for num in range(1, 7)}
+
+print(numeros)
+
+OUTRO EXEMPLOS
+
+numeros = {x \*\* 2 for x in range(10)}
+
+print(numeros)
+
+
+DESAFIO MUDE DE SET PARA DICIONARIO
+
+numeros = {x: x \*\* 2 for x in range(10)}
+
+print(numeros)
+
+ULTIMO EXEMPLO
+
+letras = {letra for letra in ‘geek university’}
+
+print(letras)
+
+ULTILIZANDO LAMBDAS
+
+CONHECIDAS POR EXPRESSOES LAMBDAS, OU SIMPLESMENTE LAMBDAS, SÃO FUNÇÕES SEM NOME, OU SEJA, FUNÇOES ANONIMAS
+
+FUNÇÃO EM PYTHON
+
+def soma(a, b):
+
+----return a + b
+
+
+def funcao(x):
+
+----return 3 \* x + 1
+
+print(funcao(4))
+
+parint(funcao(7))
+
+EXPRESSAO LAMBDA
+
+lambda x: 3 \* x + 1
+
+E COMO ULTILIZAR A EXPRESSÃO LAMBDA?
+
+calc = lambda x: 3 \* x + 1
+
+print(calc(4))
+
+print(calc(7))
+
+PODEMOS TER EXPRESSOES LAMBDAS COM MULTIPLAS ENTRADAS
+
+nome\_completo = lambda nomes, sobrenome: nome.strip().tittle() + ‘ ‘ + sobrenome.strip().title()
+
+print(nome\_completo(‘ angelina’, ‘JOLIE’))
+
+
+EM FUNÇOES PYTHON PODEMOS TER NENHUMA OU VARIAS ENTRADAS. EM LAMBDA TAMBEM
+
+amar = lambda: ‘como não amar python’
+
+uma = lambda x: 3 \* x + 1
+
+duas = lambda x, y: (x \* y) \*\* 0.5
+
+três = lambda x, y, z: 3 / (1 / x + 1 / y + 1 / z) 
+
+\# n = lambda x1, x1, ....., xn: <EXRPRESSÃO>
+
+print(amar)
+
+print(uma(6))
+
+print(duas(5, 7))
+
+print(três(3, 6, 9))
+
+OBS: SE PASSARMOS MAIS ARGUMENTOS DO QUE PARAMETROS ESPERADOS TEREMOS TypeError
+
+
+
+OUTROS EXEMPLOS
+
+autores = [‘Isaac Asimov’, ‘Ray7 Bradbury’, ‘Robert’]
+
+print(autores)
+
+autores.sort(key= lambda sobrenome: sobrenome.split(‘ ‘)[-1].lower())
+
+print(autores)
+
+FUNÇÃO QUADRATICA
+
+f(x) = a \* x \*\* 2 + b \* x + c
+
+DEFININDO A FUNÇÃO
+
+def geradora\_funcao\_quadratica(a, b, c):
+
+----“””Retorna a função f(x) = a\*x\*\*2 + b \* x + c”””
+
+----return lambda x: a \* x \*\* 2 + b \* x + c
+
+teste = geradora\_funcao\_quadratica(2, 3, -5)
+
+print(teste(0))
+
+print(teste(1))
+
+print(teste(2))
+
+print(geradora\_funcao\_quadratica(3, 0, 1)(2))
+
+MAP
+
+` `COM MAP, FAZEMOS MAPEAMENTO DE VALORES PARA FUNÇÃO
+
+import math
+
+def are(r):
+
+----“””Calcula a área de um circulo com raio ‘r’”””
+
+----return math.pi \* (r \*\* 2)
+
+print(area(2))
+
+print(area(5.3))
+
+raios = [2, 5, 7.1]
+
+FORMA COMUM
+
+areas = []
+
+for r in raios:
+
+----areas.append((area(r)))
+
+print(areas)
+
+FORMA 2 – MAP
+
+MAP É UMA FUNÇÃO QUE RECEBE DOIS PARAMETROS: O PRIMEIRO A  FUNÇÃO, O SEGUNDO UM ITERAVEL. RETORNA UM MAP OBJECT
+
+areas = map(area, raios)
+
+print(list(areas))
+
+FORMA 3 MAP COM LAMBDA
+
+print(list(map(lambda r: math.pi \* (r \*\*2), raios)))
+
+OBS = APÓS ULTILIZAR FUNÇAO map() DEPOIS DA PRIMEIRA ULTILIZAÇAO DO RESULTADO, ELE ZERA
+
+PARA FIXAR – map
+
+TEMOS DADOS ITERAVEIS
+
+dados: a1, a2, ...., na
+
+TEMOS UMA FUNÇÃO
+
+funcao: f(x)
+
+ULTILIZAMOS A FUNCAO map(f, dados) ONDE map IRA ‘MAPEAR’ CADA ELEMENTO DOS DADOS E APLICAR A FUNÇÃO
+
+O Map Object: f(a1), f(a2), f(...), f(na)
+
+MAIS UM EXEMPLO
+
+cidades = [(‘berlim’, 29), (‘cairo’, 36), (‘buenos aires’, 19), (‘los angeles’, 26), (‘tokio’, 27), (‘nova York’, 28)]
+
+print(cidades)
+
+FORMULA FAHAREINT
+
+f = 9/5 \* c + 32
+
+Lambda
+
+c\_para\_f = lambda dado: (dado[0], (9/5) \* dado[1] + 32)
+
+print(list(map(c\_para\_f, cidades)))
+
+
+FILTER
+
+filter() à SERVE PARA FILTRAR DADOS DE UMA DETERMINADA COLEÇÃO
+
+valores = 1, 2, 3, 4, 5, 6
+
+media = (sum(valores) / len(valores))
+
+print(media)
+
+BIBLIOTECA PARA TRABALHAR COM DADOS ESTATÍSTICOS
+
+impoty statistics
+
+DADOS COLETADOS DE ALGUM SENSOR
+
+dados = [1.3, 2.7, 0.8, 4.1, -0.1]
+
+CALCULANDO A MEDIA DOS DADOS ULTILIZANDO A FUNÇÃO mean()
+
+media = statistics.mean(dados)
+
+OBS: ASSIM COMO A FUNÇÃO map(), A filter() RECEBE DOIS PARAMETROS, SENDO UMA FUNÇÃO E UM ITERAVEL
+
+res = filter(lambda x: x > media, dados)
+
+print(list(res)) à SO PODE SER EXECUTADO UMA VEZ 
+
+OBS à ASSIM COMO NA FUNÇAO map(), APÓS SEREM ULTILIZADOS OS DADOS DE filter() ELE SÃO EXCLUIDOS DA MEMORIA
+
+
+países = [‘’ , ‘Argentina’, ‘’, ‘Brasil’, ‘Chile’, ‘’]
+
+res = filter(None, países)
+
+print(list(res))
+
+
+
+res = filter(lambda pais: len(pais) > 0, países)
+
+
+A DIFERENÇA ENTRE map() E filter() É:
+
+map() à RECEBE DOIS PARAMETROS, EM UMA FUNÇAO E UM ITERAVAL E RETORNA UM OBJETO MAPEANDO A FUNÇAO PARA CADA ELEMENTO DO ITERAVEL
+
+filter() à RECEBE DOIS PARAMETROS, UMA FUNÇÃO EM UM ITERAVEL E RETORNA UM OBJETO FILTRANDO APENAS OS ELEMENTOS DE ACORDO COM A FUNÇAO
+
+SO RECEBE VALOR False E True/bool
+
+EXEMPLO MAIS COMPLEXO
+
+usuários = [
+
+----{“username”: “samuel”, “tweets”: [“eu adoro bolos”, “Eu adoro pizzas”]},
+
+----{“username”: “samuel”, “tweets”: [“eu adoro bolos”, “Eu adoro pizzas”]},
+
+----{“username”: “samuel”, “tweets”: [“eu adoro bolos”, “Eu adoro pizzas”]},
+
+----{“username”: “samuel”, “tweets”: [“eu adoro bolos”, “Eu adoro pizzas”]},
+
+]
+
+print(usuários)
+
+FILTRAR OS USUARIOS QUE ESTAO INATIVO NO TWITTER
+
+FORMA 1
+
+inativos = list(filter(lambda usuario: len(usuario[‘Tweets’]) == 0, usuarios))
+
+print(inativos)
+
+FORMA 2
+
+inativos = list(filter(lambda usuario: not usuario[‘Tweets’]), usuarios))
+
+print(inativos)
+
+
+
+UMA LISTA VAZIA É False
+
+COMO COMBINAR filter() E map()
+
+nomes = [‘Vanessa’, ‘Ana’, ‘Maria’]
+
+DEVEMOS CRIAR UMA LISTA CONTENDO ‘SUA INSTRUTURA É’ + NOME, DESDE QUE CADA NOME TENHA MENOS DE 5 CARACTERES
+
+lista = list(map(lambda nome: f’sua instrutora é {nome}’, filter(lambda nome: len(nome) < 5, nomes)))
+
+print(lista)
+
+
+
+
+Reduce 
+
+OBS: A PARTIR DO PYTHON 3 A FUNÇÃO reduce() NÃO É MAIS UMA FUNÇÃO INTEGRADA (built-in), AGORA TEMOS QUE IMPORTAR E ULTILIZAR ESTA FUNÇÃO A PARTIR DO MODULO ‘functools’
+
+Guido van Rossum disse: UTILIZE A FUNÇÃO reduce() SE VOCE REALMENTE PRECISA DELA. EM TODO CASO 99% DAS VEZES UM loop for É MAIS LEGIVEL
+
+PARA ENTENDER O reduce()
+
+IMAGINE QUE VOCÊ TEM UMA COLEÇÃO DE DADOS:
+
+dados = [a1, a2, a3, ...., an]
+
+E VOCE TEM UMA FUNÇAO QUE RECEBE DOIS PARAMETROS:
+
+def funcao(x, y):
+
+----return x \* y
+
+ASSIM COMO map() e filter(), A FUNÇAO reduce() RECEBE DOIS PARAMETROS: A FUNÇAO E O ITERAVEL
+
+reduce(funcao, dados)
+
+A FUNÇÃO reduce(), FUNCIONA DA SEGUINTE FORMA:
+
+----PASSO 1: res1 = f(a1, a2) #APLICA A FUNÇÃO NOS DOIS PRIMEIROS ELEMENTOS DA COLEÇÃO E GUARDA O RESULTADO
+
+----PASSO 2: res2 = f(res1, a3) #APLICA A FUNÇÃO PASSANDO O RESULTADO DO PASSO 1 MAIS O TERCEIRO ELEMENTO E GUARDA O res
+
+----ISSO É REPETIDO ATE O FINAL
+
+----PASSO 3: res3 = f(res2, a4)
+
+----PASSO N: resn = f(resm, na)
+
+OU SEJA EM CADA PASSO ELA APLICA A FUNÇÃO PASSANDO COMO PRIMEIRO ARGUMENTO O RESULTADO DA APLICAÇÃO ANTERIOR. NO FINAL, reduce() IRA RETORNAR O RESULTADO FINAL
+
+ALTERNATIVAMENTE, PODERIAMOS VER A FUNÇÃO reduce() COMO:
+
+funcao(funcao(funcao(a1, a2), a3), a4), ....), an)
+
+COMO FUNCIONA NA PRATICA
+
+VAMOS ULTILIZAR A FUNÇÃO reduce() PARA MULTIPLICAR TODOS OS NUMEROS DE UMA LISTA
+
+from functools import reduce
+
+dados = [2, 4, 5, 6,]
+
+PARA UTILIZAR O reduce() NOS PRECISAMOS DE UMA FUNÇÃO QUE RECEBA DOIS PARAMETROS
+
+
+multi = lambda x, y: x \* y
+
+res = reduce(multi, dados)
+
+print(res)
+
+UTILIZANDO UM loop NORMAL
+
+res = 1
+
+for n in dados:
+
+----res = res \* n
+
+print(res)
+
+Any E All
+
+All() à RETORNA True SE TODOS OS ELEMENTOS DO ITERAVEL SÃO VERDADEIROS OU AINSA SE O ITERAVEL ESTA VAZIO
+
+EXEMPLO all()
+
+print(all([0, 1, 2, 3, 4])) à TODOS OS NUMEROS SÃO VERDADEIROS à False por causa do 0
+
+print(all([1, 2, 3, 4])) à TODOS OS NUMEROS SÃO VERDADEIROS à True PORQUE FOI RETIRADO O 0
+
+
+print(all([])) à TODOS OS NUMEROS SÃO VERDADEIROS à True SE FOR VAZIA
+
+PODERIA SER UMA TUPLA, SET, STRING
+
+ALL É UMA FUNÇÃO QUE VERIFICA SE TODOS ELEMENTOS SÃO VERDADEIROS
+
+
+nomes = [‘carlos’, ‘camila’]
+
+print(all([nome[0] == ‘c’ for nome in nomes])) à True TODOS ELEMENTOS COMEÇAM COM c
+
+OBS: UM ITERÁVEL VAZIO CONVERTIDO EM boolean É False, MAS O all() ENTENDE COM True
+
+any() à RETORNA True SE QUALQUER ELEMENTO DO ITERÁVEL FOR VERDADEIRO. SE O ITERÁVEL ESTIVER VAZIO, RETORNA False
+
+print(any([0, 1, 2, 3, 4])) True SE HOUVER APENAS UM VERDADEIRO IRA DA True MESMO QUE OS OUTROS VALORES SEJA False
+
+
+
+
+
+
+GENERATOR EXPRESSION
+
+EM AULAS ANTERIORES NOS ESTUDAMOS
+
+\- List Comprehension
+
+\- Dictinary Comprehension
+
+\- Set Comprehension
+
+NÃO VIMOS:
+
+\- Tuple Comprehension... PORQUE ELAS SE CHAMAM Generators
+
+
+nomes = [‘carlos’, ‘camila’]
+
+print(any([nome[0] == ‘c’ for nome in nomes]))
+
+PODERIAMOS TER FEITO ULTILIZANDO GENERATORS
+
+nomes = [‘carlos’, ‘camila’]
+
+print(any(nome[0] == ‘c’ for nome in nomes))
+
+#LIST COMPREHENSION
+
+res = [nome[0] == ‘c’ for nome in nomes]
+
+print(type(res))
+
+GENERATOR à OCUPA MENOS RECURSO EM MEMORIA
+
+res = (nome[0] == ‘c’ for nome in nomes)
+
+
+
+QUAL É A ULTILIDADE DE getsizeof()? à RETORNA A QUANTIDADE DE BYTES EM MEMORIA DO ELEMENTO PASSADO COMO PARÂMETRO
+
+from sys import getsizeof
+
+print(getsizewof(‘geek’))
+
+GERANDO UMA LISTA DE NUMEROS COM List Comprehension
+
+list\_comp = getsizeof([x \* 10 for x in range(1000)]) 
+
+GERANDO UMA LISTA DE NUMEROS COM set Comprehension
+
+set\_comp = getsizeof({x \* 10 for x in range(1000)}) 
+
+GERANDO UMA LISTA DE NUMEROS COM dictionary Comprehension
+
+dict\_comp = getsizeof({x: x \* 10 for x in range(1000)}) 
+
+GERANDO UMA LISTA DE NÚMEROS COM GENERATOR
+
+gen = getsizeof(x \* 10 for x in range(1000))
+
+
+print(f’List: {list\_comp}’)
+
+print(f’set: {set\_comp}’)
+
+print(f’dict: {dict\_comp}’)
+
+print(f’gen: {gen}’)
+
+
+EU POSSO ITERA NO GENERATOR EXPRESSION? SIM
+
+gen = (x \* 10 for x in range(1000))
+
+for num in gen:
+
+----print(num)
+
+SORTED
+
+OBS: NÃO CONFUNDA, APESAR DO NOME, COM A FUNÇÃO sort() QUE JÁ ESTUDAMOS EM LISTAS. O sort() SO FUNCIONA EM LISTAS
+
+PODEMOS UTILIZAR O sorted() COM QUALQUER ITERÁVEL
+
+COMO O PROPRIO NOME DIZ, sorted() SERVE PARA ORDENAR
+
+EXEMPLO
+
+numeros = [6, 1, 8, 2]
+
+print(numeros)
+
+print(sorted(numeros)) # ORDENAR DO MENOR PARA O MAIOR
+
+O sort() MODIFICA A PROPRIA LISTA JÁ O sorted() ELE NÃO MODIFICA, ELE GERA UMA NOVA
+
+O sorted() SEMPRE RETORNA UMA LISTA COM OS ELEMENTOS DO ITERAVEL ORDENADOS
+
+ADICIONANDO PARAMETROS AO sorted()
+
+print(sorted(numeros, reverse=True)) à ODERNA DO MAIOR PARA O MENOR
+
+ORDENANDO POR USERNAME – ORDEM ALFABETICA
+
+print(sorted(usuários, key=lambda usuario: usuario[“username”]))
+
+ORDENANDO PELO NUMERO DE TWEETS
+
+print(sorted(usuários, key=lambda usuario:  len[“tweets”]))
+
+ULTIMO EXEMPLO
+
+ORDENA DA MENOS TOCADA PARA A MAIS TOCADA
+
+print(sorted(musicas, key=lambda musica: musica[‘tocou]))
+
+
+MIN E MAX
+
+max() à RETORNA O MAIOR VALOR EM UM ITERAVEL OU O MAIOR DE DOIS OU MAIS ELEMENTO
+
+EXEMPLOS à
+
+lista = [1, 8, 129]
+
+print(max(lista)) à IRA APARECER O MAIOR NUMERO 129
+
+
+
+
+FAÇA UM PROGRAMA QUE RECEBA DOIS VALORES DO USUARIO E MOSTRE O MAIOR
+
+val1 = int(input(‘p valor’))
+
+val2 = int(input(‘s valor’))
+
+print(max(val1, val2))
+
+min() à RETORNA O MENOR VALOR EM UM ITERAVEL OU O MENOR DE DOIS OU MAIS ELEMENTOS
+
+OUTROS EXEMPLOS
+
+MAX E MIN ELES CONTAR PELA ORDEM ALFABETICA
+
+print(max(nomes, key=lambda nome: len(nome))) à IRA PEGAR O MAIOR NOME E NÃO PELA ORDEM ALFABETICA
+
+REVERSED
+
+OBS: NÃO CONFUNDA COM A FUNÇÃO reverse() QUE ESTUDAMOS NAS LISTAS
+
+A FUNÇAO reverse() SO FUNCIONA EM LISTAS
+
+JÁ A FUNÇÃO reversed() FUNCIONA COM QUALQUER ITERAVEL
+
+SUA FUNÇÃO E INVERTER O ITERAVEL
+
+
+A FUNÇAO reversed() RETORNA UM ITERAVEL CHAMADO list Reverse Iterator
+
+PODEMOS CONVERTER O ELEMENTO RETORNADO PARA UMA LISTA, TUPLA OU CONJUNTO
+
+print(list(reversed(lista)))
+
+SET à NÃO DEFINIMOS ORDEM DO SET à EM CONJUNTOS NÃO DEFINIMOS A ORDEM DOS ELEMENTOS
+
+print(‘ ‘.join(list(reversed(‘Geek University’))))
+
+JÁ VIMOS COM FAZER ISSO MAIS FACIL COM O SLICE DE STRINGS
+
+print(‘geek university’[: : -1])
+
+PODEMOS TAMBEM ULTILIZAR O reversed() PARA FAZER UM LOOP FOR REVERSO
+
+for n in reversed(range(0, 10)):
+
+----print(n)
+
+TAMBEM JA VIMOS COMO FAZER ISSO ULTILIZANDO O PROPRIO RANGE()
+
+for n in range(9, -1, -1):
+
+----print(n)
+
+Len, Abs, Sum e Round
+
+len() à RETORNA O TAMANHO (OU SEJA, O NUMERO DE ITENS) DE UM ITERAVEL
+
+POR DEBAIXO DOS PANOS, QUANDO ULTILIZAMOS A FUNÇÃO len() O PYTHON FAZ O SEGUINTE:
+
+TODA FUNÇÃO COM DOIS UNDELINE SE CHAMA Dunder len
+
+print(‘geek university’.\_\_len\_\_()) 
+
+Abs
+
+abs() à RETORNA O VALOR ABSOLUTO DE UM NUMERO INTEIRO OU REAL DE FORMA BASICA, SERIA O SEU VALOR REAL SEM O SINAL
+
+sum() à RECEBE COMO PARAMETRO UM ITERAVEL, PODENDO RECEBER UM VALOR INICIAL, E RETORNA A SOMA TOTAL DOS ELEMENTOS, INCLUINDO O VALOR INICIAL
+
+OBS: O VALOR INICIAL default = 0
+
+ROUND
+
+round() à RETORNA UM NUMERO ARREDONDADO PARA N DIGITO DE PRECISÃO APÓS A CASA DECIMAL. SE A PRECISAO NÃO FOR INFORMADA RETORNA O INTEIRO MAIS PROXIMO DA ENTRADA
+
+]
+
+EXEMPLOS ROUND
+
+print(round(10.2)) à 10
+
+print(round(1.212121212, 2) à 1.21
+
+ZIP
+
+zip() à CRIA UM ITERAVEL (ZIP OBJECT) QUE AGREGA ELEMENTO DE CADA UM DOS ITERAVEIS PASSADOS COMO ENTRADA EM PARES
+
+EXEMPLOS
+
+lista1 = [1, 2, 3]
+
+lista2 = [4, 5, 6]
+
+zip1 = zip(lista1, lista2)
+
+print(zip1)
+
+print(type(zip1))
+
+OBS: O zip() UTILIZA COMO PARAMETRO O MENOR TAMANHO EM ITERAVEL. ISSO SIGNIFICA QUE SE ESTIVER TRABALHANDO COM ITERÁVEIS DE TAMANHOS DIFERENTES, IRA PARAR QUANDO OS ELEMENTOS DO MENOR ITERAVEL ACABAR
+
+PODEMOS UTILIZAR DIFERENTES ITERAVEI COM zip()
+
+tupla = 1, 2, 3, 4, 5
+
+lista = [6, 7, 8, 9, 10]
+
+dicionário = {‘a’: 11, ‘b’: 12, ‘c’: 13, ‘d’: 14, ‘e’: 15}
+
+zt = zip(tupla, lista, dicionário.values())
+
+print(list(zt))
+
+LISTA DE TUPLAS
+
+dados = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
+
+print(liat(zip(\*dados)))
+
+EXEMPLOS MAIS COMPLEXOS
+
+prova1 = [80, 91, 78]
+
+prova2 = [98, 89, 53]
+
+alunos = [‘maria’, ‘pedro’, ‘carla’]
+
+final = {dado[0]:max(dado[1], dado[2]) for dado in zip(alunos, prova1, prova2)}
+
+PODEMOS UTILIZAR O map()
+
+final = zip(alunos, map(lambda nota: max(max), zip(prova1, prova2)))
+
+print(dict(final))
+
+
+DEBUGANDO ERROS – ERROS MAIS COMUNS EM PYTHON
+
+*ATENÇÃO à*  É IMPORTANTE PRESTAR ATENÇAO E APRENDER A LER AS SAIDAS DE ERROS GERADAS PELA EXECUÇAO DO NOSSO CODIGO
+
+OS ERROS MAIS COMUNS:
+
+SyntaxError à Ocorre quando o Python encontra um erro de sintaxe. Ou seja, você escreveu algo que o Python não reconhece como parte da linguagem
+
+NameError à OCORRE QUANDO UMA VARIAVEL OU FUNÇAO NÃO FOI DEFINIDA
+
+TypeError à OCORRE QUANDO UMA FUNÇÃO/OPERAÇÃO/AÇÃO É APLICADA A UM TIPO ERRADO
+
+IndexErro à OCORRE QUANDO TENTAMOS ACESSAR UM ELEMENTO EM UMA LISTA OU OUTRO TIPO DE DADO INDEXADO UTILIZANDO UM INDICE INVÁLIDO
+
+ValueError à OCORRE QUANDO UMA FUNÇÃO/OPERAÇÃO BUILT-IN (INTEGRADA) RECEBE UM ARGUMENTO COM TIPO CORRETO MAS COM VALOR INAPROPRIADO
+
+KeyError à OCORRE QUANDO TENTAMOS ACESSAR UM DICIONARIO COM UMA CHAVE QUE NÃO EXISTE
+
+AttributeError à OCORRE QUANDO UMA VARIAVEL NÃO TEM UM ATRIBUTO/FUNÇÃO
+
+IndentationError à OCORRE QUANDO NÃO RESPEITAMOS A INDENTAÇÃO DO PYTHON (4 ESPAÇOS)
+
+OBS: Exceptions E Erros SÃO SINONIMOS NA PROGRAMAÇÃO
+
+OBS: IMPORTANTE LER E PRESTAR ATENÇÃO NA SAIDA DE ERRO
+
+LEVANTANDANDO OS PRO´PRIOS ERROS COM RAISE
+
+raise à LANÇA EXCEÇÕES
+
+
+
+OBS: O raise NÃO É UMA FUNÇÃO. É UMA PALAVRA RESERVADA, ASSIM COMO def OU QUALQUER OUTRA EM PYTHON
+
+PARA SIMPLICAR, PENSE NO raise COMO SENDO UTIL PARA QUE POSSAMOS CRIAR NOSSAS PROPRIAS EXCEÇÕES E MENSAGENS DE ERRO
+
+A FORMA GERAL DE UTILIZAÇÃO É:
+
+raise TipoDoErro(‘Mensagem de erro’)
+
+EXEMPLO REAL
+
+def colore(texto, cor):
+
+----if type(texto) is not str:
+
+--------raise TypeError(‘Texto precisa ser uma string’)
+
+----if type(cor) is not str:
+
+--------raise TypeError(‘Cor precisa ser uma string’)
+
+----print(f’O texto {} será impresso na cor {cor}’)
+
+OBS: O raise ASSIM COMO O return, FINALIZA A FUNÇÃO. OU SEJA, NADA APÓS O raise É EXECUTADO
+
+
+O BLOCO Try/Except
+
+UTILIZAMOS O BLOCO TRY/EXCEPT PARA TRATAR ERROS QUE PODEM OCORRER NO NOSSO CODIGO. PREVININDO ASSIM QUE O PROGRAMA PARE DE FUNCIONAR E O USUARIO RECEBA MENSAGENS DE ERRO INESPERADAS
+
+A FORMA GERAL MAIS SIMPLES É
+
+try: 
+
+----//EXECUÇÃO PROBLEMATICA
+
+except:
+
+----//O QUE DEVE SER FEITO EM CASO DE PROBLEMA
+
+EXEMPLO 1 – TRATANDO UM ERRO GENÉRICO
+
+try:
+
+----geek()
+
+except:
+
+----print(‘Deu algum problema’)
+
+TENTE EXECUTAR A FUNÇÃO geek(), CASO VOCÊ ENCONTRE ERROS, IMPRIMA A MENSAGEM DE ERRO
+
+OBS: TRATAR ERRO DE FORMA GENÉRICA NÃO É A MELHOR FORMA DE TRATAMENTO DE ERROS. O IDEAL É SEMPRE TRATAR DE FORMA ESPECIFICA
+
+EXEMPLO 2 à TRATANDO UM ERRO ESPECIFICO
+
+try:
+
+----geek()
+
+except NameError:
+
+----print(‘voce esta utilizando uma função inexistente’)
+
+EXEMPLO 3 à
+
+try:
+
+----geek()
+
+except NameError as err:
+
+----print(‘voce esta utilizando uma função inexistente: {err}’)
+
+except: à FORMA GENERICA
+
+except TypeError à FORMA ESPECIFICA COM O ERRO QUE VAI DAR
+
+
+PODEMOS EFETUAR DIVERSOS TRATAMENTO DE ERROS DE UMA VEZ
+
+try:
+
+----len(5)
+
+except NameError as erra:
+
+----print(f’Deu NameError: {erra}’)
+
+except TypeError as errb:
+
+----print(f’DeuTypeError: {errb}’)
+
+
+
+
+
+def pega\_valor(dicionário, chave):
+
+----try:
+
+--------return dicionário[chave]
+
+----except KeyError:
+
+--------return None
+
+----except TypeError:
+
+--------return None
+
+dic = {“nome”: “Geek”}
+
+print(pega\_valor(dic, “game”))
+
+Try, Except, Else E Finally
+
+DICA DE QUANDO E ONDE TRATA CODIGO
+
+TODA ENTRADA DEVE SER TRATADA
+
+OBS: A FUNÇÃO DO USUARIO É DESTRUIR SEU SISTEMA
+
+EXEMPLO
+
+num = 0
+
+try:
+
+----num = int(input(‘Informe um numero: ‘))
+
+except ValueError:
+
+----print(‘Valor incorreto’)
+
+print(f’Voce digitou {num}’)
+
+Else E Finally NÃO SÃO COMUNS
+
+Else à É EXECUTADO SOMENTE SE NÃO OCORRER O ERRO
+
+
+try:
+
+----num = int(input(‘Informe um numero: ‘))
+
+except ValueError:
+
+----print(‘Valor incorreto’)
+
+else:
+
+----print(f’Voce digitou {num}’)
+
+Finally
+
+
+try:
+
+----num = int(input(‘Informe um numero: ‘))
+
+except ValueError:
+
+----print(‘Valor incorreto’)
+
+else:
+
+----print(f’Voce digitou {num}’)
+
+finally:
+
+----print(‘Executando o finally’)
+
+OBS à O BLOCO FINALLY É SEMPRE EXECUTADO. INDEPENDENTE SE HOUVE EXCEÇÃO OU NÃO
+
+
+PORQUE ENTÃO UTILIZAR O FINALLY
+
+O FINALLY, GERALMENTE E UTILIZADO PARA FECHAR OU DESALOCAR RECURSOS
+
+EXEMPLO MAIS COMPLEXO à ERRADO
+
+def dividir(a, b):
+
+----return a / b
+
+num1 = int(input(‘informe o primeiro numero: ‘))
+
+try:
+
+----num2 = int(input(‘informe o primeiro numero: ‘))
+
+except ValueError:
+
+----print(‘O valor precisa ser numerico’)
+
+try:
+
+----print(dividir(num1, num2))
+
+except NameError:
+
+----print(dividir(num1, num2))
+
+
+EXEMPLO MAIS COMPLEXO à CORRETO
+
+OBS: VOCE E RESPONSAVEL PELAS ENTRADAS DAS SUAS FUNÇÕES. ENTAO TRATE AS
+
+
+
+
+ESSA É A FORMA MAIS CORRETA DE FAZER TRATAÇÃO DO CODIGO à
+
+def dividir(a, b):
+
+----try:
+
+--------return int(a) / int(b)
+
+----except ValueError:
+
+--------return ‘Valor incorreto’
+
+----except ZeroDivisionError:
+
+--------return ‘Não é possível realizar uma divisão por zero’
+
+num1 = input(‘Informe o primeiro número: ‘)
+
+num2 = input(‘informe o segundo numero: ‘)
+
+print(dividir(num1, num2))
+
+
+ESSA É A FORMA GENÉRICA DE REALIZAR à
+
+def dividir(a, b):
+
+----try:
+
+--------return int(a) / int(b)
+
+----except:
+
+--------return ‘Ocorreu um problema
+
+num1 = input(‘Informe o primeiro número: ‘)
+
+num2 = input(‘informe o segundo numero: ‘)
+
+print(dividir(num1, num2))
+
+
+FORMA SEMIGENÉRICA à
+
+def dividir(a, b):
+
+----try:
+
+--------return int(a) / int(b)
+
+----except (ValueError, ZeroDivisionError):
+
+--------return ‘Ocorreu um problema’
+
+num1 = input(‘Informe o primeiro número: ‘)
+
+num2 = input(‘informe o segundo numero: ‘)
+
+print(dividir(num1, num2))
+
+DEBUGANDO E TRATANDO ERROS COM pdbà
+
+PDB à Python Debugger
+
+Bug à Inseto
+
+
+OBS à A UTILIZAÇAO DO print() PARA DEBUGAR CÓDIGO É UMA PRÁTICA RUIM
+
+def divider(a, b):
+
+----print(a, b)
+
+----try:
+
+--------return int(a) / int (b)
+
+----except (ValueError, ZeroDivisionError) as err:
+
+--------return f’Ocorreu um problema: {err}’
+
+print(dividir(4, 7))
+
+EXISTEM FORMAS MAIS PROFISSIONAIS DE SE FAZER ESSE ‘debug’, UTILIZANDO O debugger
+
+EM PYTHON, PODEMOS FAZER ISSO EM DIFERENTES IDEs, COMO O PyCharm OU UTILIZANDO O PDB – Python Debugger
+
+EXEMPLO COM PyCharm
+
+def divider(a, b):
+
+----print(a, b)
+
+----try:
+
+--------return int(a) / int (b)
+
+----except (ValueError, ZeroDivisionError) as err:
+
+--------return f’Ocorreu um problema: {err}’
+
+print(dividir(4, 7))
+
+EXEMPLO COM O PDB - Python DEBUGGER
+
+PARA UTILIZAR O Python Debugger, PRECISAMOS IMPORTAR A BIBLIOTECA pdb E ENTÃO UTILIZAR A FUNÇÃO set\_trace()
+
+A PARTIR DO PYTHON 3.7, NÃO É MAIS NECESSARIO IMPORTAR A BIBLIOTECA PDB, POIS O COMANDO DE DEBUG FOI INCORPORADO COMO FUNÇÃO BUILT-IN (INTEGRADA) CHAMADA breakpoint()
+
+COMANDOS BÁSICO DO PDB
+
+l à (LISTAR ONDE ESTAMOS NO CODIGO)
+
+n à (PROXIMA LINHA)
+
+p à (IMPRIME A VARIAVEL)
+
+c à (CONTINUA A EXECUÇÃO – FINALIZA O debugging)
+
+
+import pdb
+
+nome = ‘Angelina’
+
+sobrenome = ‘Jolie’
+
+pdp.set\_trace()
+
+nome\_completo = nome + ‘ ‘ + sobrenome
+
+curso = ‘programação em python: essencial’
+
+final = nome\_completo + ‘ faz o curso ‘ + curso
+
+print(final)
+
+EXEMPLO 2 à
+
+PORQUE UTILIZAR ESTE FORMATO?
+
+O DEBUG É UTILIZADO DURANTE O DESENVOLVIMENTO. COSTUMAMOS REALIZAR TODOS OS IMPORTS DE BIBLIOTECAS NO INICIO DO ARQUIVO. POR ISSO, AO INVES DE COLOCARMOS O IMPORT DO PDB NO INICIO DO ARQUIVO, NÓS COLOMAS SOMENTE ONDE VAMOS DEBUGGAR, E AO FINALIZAR JÁ FAZEMOS A REMOÇÃO
+
+import pdb
+
+nome = ‘Angelina’
+
+sobrenome = ‘Jolie’
+
+import pdb; pdp.set\_trace()
+
+nome\_completo = nome + ‘ ‘ + sobrenome
+
+curso = ‘programação em python: essencial’
+
+final = nome\_completo + ‘ faz o curso ‘ + curso
+
+print(final)
+
+EXEMPLO 3 à ULTILIZANDO breakpoint() A PARTIR DO PYTHON 3.7
+
+nome = ‘Angelina’
+
+sobrenome = ‘Jolie’
+
+breakpoint()
+
+nome\_completo = nome + ‘ ‘ + sobrenome
+
+curso = ‘programação em python: essencial’
+
+final = nome\_completo + ‘ faz o curso ‘ + curso
+
+print(final)
+
+OBS: CUIDADO COM OS CONFLITOS ENTRE NOMES DE VARIAVEIS E OS COMANDOS DO PDB
+
+def soma(l, n, p, c):
+
+----breakpoint()
+
+----return l + n + p + c
+
+OBS: COMO OS NOMES DAS VARIAVEIS SÃO OS MESAMOS DOS COMANDOS DO PDB, DEVEMOS UTILIZAR O COMANDO p PARA IMPRIMIR AS VARIAVEIS, OU SEJA: 
+
+p nome\_da\_variavel
+
+NADA DE COLOCAR NOME NÃO REPRESENTATIVOS EM VARIAVEIS. SEAMPRE OPTAR POR NOMES SIGNIFICATIVOS 
+
+EX.
+
+def soma(num1, num2, num3, num4):
+
+----breakpoint()
+
+----return num1 + num2 + num3 + num4
+
+TRABALHANDO COM MODULOS PYTHON
+
+O MODULO RANDOM E O QUE SÃO MÓDULOS?
+
+\- EM PYTHON, MÓDULOS NADA MAIS SÃO DO QUE OUTROS ARQUIVOS PYTHON
+
+MODULO RANDOM à POSSUI VARIAS FUNÇOES PARA GERAÇAO DE NUMEROS PSEUDO-ALEATORIO
+
+OBS: EXISTEM DUAS FORMAS DE SE UTILIZAR UM MODULO OU FUNÇÃO DESTE
+
+FORMA 1 – IMPORTANDO TODO O MODULO (NÃO RECOMENDADO)
+
+import random
+
+random() à GERA UM NUMERO REAL PSEUDO-ALEATÓRIO ENTRE 0 E 1
+
+OBS: AO REALIZAR O IMPORT DE TODO O MÓDULO, TODAS FUNÇÕES, ATRIBUTOS, CLASSES E PROPRIEDADES QUE ESTIVEREM DENTRO DO MODULO FICARAO DISPONIVEIS (FICARAO EM MEMORIA) CASO VOCE SAIBA QUAIS FUNÇOES VOCE PRECISIA UTILIZAR DESTE MODULO, ENTÃO ESTA NÃO SERIA A FORMA IDEAL DE UTILIZAÇÃO. NÓS VEREMOS UMA FORMA MELHOR NA FORMA 2
+
+print(random.random())
+
+VEJA QUE PARA UTILIZAR A FUNÇÃO random() DO PACOTE random, NÓS COLOCAMOS O NOME DO E O NOME DA FUNÇÃO SEPARADOS POR PONTO
+
+OBS: NÃO CONFUNDA A FUNÇÃO random() COM O PACOTE random. PODE PARECER CONFUSO, MAS A FUNÇÃO random() É APENAS UMA FUNÇÃO DENTRO DO MÓDULO random
+
+FORMA 2 à IMPORTANDO UMA FUNÇAO ESPECIFICA DO MODULO (FORMA RECOMENDADA DE IMPORTAR)
+
+from random import random
+
+NO import ACIMA, ESTAMOS FALANDO: DO MÓDULO random, IMPORTE A FUNÇÃO random
+
+
+for i in range(10):
+
+----print(random())
+
+
+uniform() à GERAR UM NUMERO REAL PSEUDO-ALEATORIO ENTRE OS VALORES ESTABELECIDOS
+
+from random import uniform
+
+for i in range(10):
+
+----print(uniform(3, 7))  à 7 NÃO É INCLUIDO
+
+
+randint() à GERA VALORES INTEIROS PSEUDO-ALEATORIOS ENTRE OS VALORES ESTABELECIDOS
+
+
+
+
+GERADOR DE APOSTAS PARA A MEGA-SENA
+
+for i in range(6):
+
+----print(randint(1, 61), end=’,  ‘) à COMEÇA EM 1 E VAI ATÉ 60
+
+
+choice() à MOSTRA UM VALOR ALEATÓRIO ENTRE UM ITERÁVEL
+
+from random import choice
+
+jogadas = [‘pedra’, ‘papel’, ‘tesoura’]
+
+print(choice(jogadas))
+
+shuffle() à TEM A FUNÇÃO DE EMBARALHAR DADOS
+
+from random import shuffle
+
+cartas = [‘K’, ‘Q’, ‘J’, ‘A’, ‘2’, ‘3’, ‘4’, ‘5’, ‘6’, ‘7’]
+
+shuffle(cartas)
+
+print(cartas)
+
+
+TRABALHANDO COM MODULOS BUILT-IN (MÓDULOS INTEGRADOS, QUE JÁ VEM INSTALADOS NO PYTHON)
+
+UTILIZANDO alias (APELIDOS) PARA MÓDULOS/FUNÇÕES
+
+
+import random as rdm
+
+print(rdm.random())
+
+from random import randint as rdi, random as rdm
+
+print(rdi(5, 89))
+
+
+
+PODEMOS IMPORTAR TODAS AS FUÇÕES DE UM MODULO UTILIZANDO O \*
+
+from random import \*
+
+IMPORTANDO TODO MODULO
+
+import random
+
+
+COSTUMAMOS A UTILIZAR tuple PARA COLOCAR MÚLTIPLOS imports DE UM MESMO MÓDULO
+
+from random import (
+
+----random, 
+
+----randint,
+
+----shuffle
+
+)
+
+MODULOS CUSTOMIZADOS
+
+COMO MODULOS PYTHON NADA MAIS SÃO DO QUE ARQUIVOS PYTHON, ENTAO TODOS OS ARQUIVOS QUE CRIAMOS NESTE CURSO SÃO MODULOS PYTHON PRONTOS PARA SEREM UTILIZADOS
+
+
+IMPORTANDO UMA FUNÇÃO ESPECIFICA DO NOSSO MÓDULO
+
+from funções\_com\_parametro import soma impares
+
+print(soma\_impares([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+
+
+IMPORTANDO TODO O MODULO
+
+import funcoes\_com\_parametro as fcp
+
+ESTAMOS ACESSANDO E IMPRIMINDO UMA VARIAVEL CONTIDA NO MODULO
+
+print(fcp.lista)
+
+print(fcp.tupla)
+
+
+from map import cidades, c\_para\_f
+
+print(list(map(c\_para\_f, cidades)))
+
+
+
+INSTALANDO E ULTILIZANDO MODULOS EXTERNOS
+
+UTILIZAMOS O GERENCIADOR DE PACOTES PYTHON CHAMADO Pip – Python Installer Package
+
+VOCE PODE CONHECER TODOS OS PACOTES EXTERNOS OFICIAIS EM: <https://pypi.org>
+
+
+
+COLORAMA à E UTILIZADO PARA PERMITIR IMPRESS’AO DE TEXTOS COLORIDOS NO TERMINAL
+
+PARA INSTALAR UM PACOTE à pip install nome\_do\_pacote
+
+
+
+PACOTES
+
+MÓDULO à É APENAS UM ARQUIVO PYTHON QUE PODE TER DIVERSAS FUNÇOES
+
+PARA UTILIZARMOS
+
+PACOTE à É UM DIRETORIO CONTENDO UMA COLEÇAO DE MODULOS
+
+OBS: NAS VERSÕES 2.X DO PYTHON, UM PACOTE PYTHON DEVERIA CONTER DENTRO DELE UM ARQUIVO CHAMADO \_\_init\_\_.py
+
+NAS VERSOES DO PYTHON 3.x, NÃO É MAIS OBRIGATORIA A UTILIZAÇAO DESTE ARQUIVO, MAS NORMALMENTE AINDA É UTILIZADO PARA MANTER COMPATIBILIDADE
+
+DUNDER MAIN E DUNDER NAME
+
+Dunder à Double Under
+
+Dunder Name à \_\_name\_\_
+
+Dunder Main à \_\_main\_\_
+
+
+EM PYTHON, SÃO UTILIZADOS DUNDER PARA CRIAR FUNÇÕES, ATRIBUTOS, PROPRIEDADES E ETC UTILIZANDO DOUBLE UNDER PARA NÃO GERAR CONFLITO COM OS NOMES DESSES ELEMENTOS NA PROGRAMAÇÃO
+
+EM PYTHON, SE EXECUTARMOS UM MODULO DIRETAMENTE NA LINHA DE COMANDO, INTERNAMENTE O PYTON ATRIBUIRA A VARIAVEL \_\_name\_\_ O VALOR \_\_main\_\_ INDICADO QUE ESTE MÓDULO E O MODULO DE EXECUÇÃO PRINCIPAL
+
+
+LEITURA DE ARQUIVOS
+
+PARA O CONTEUDO DE UM ARQUIVO EM PYTHON, UTILIZAMOS A FUNCAO INTEGRADA open() QUE LITERALMENTE SIGNIFICA ‘abrir’
+
+open() à A FORMA MAIS SIMPLES DE UTILIZAÇÃO NOS PASSAMOS APENAS UM PARAMETRO DE ENTRADA, QUE NESTE CASO E O NOME DO ARQUIVO A SER LIDO. ESSA FUNÇÃO RETORNA UM \_io.TextIOWrapper E É COM ELE QUE TRABALHAMOS ENTAO
+
+OBS: POR PADRAO A FUNÇÃO open() ABRE O ARQUIVO PARA LEITURA, ESTE ARQUIVO DEVE EXISTIR, OU ENTÃO TEREMOS O ERRO FileNotFoundError
+
+
+mode r à MODO DE LEITURA r à read() à LER
+
+PARA LER O CONTEUDO DE UM ARQUIVO, APÓS SUA ABERTURA, DEVEMOS UTILIZAR A FUNÇÃO read()
+
+EXEMPLO
+
+arquivo = open(‘nome\_do\_arquivo’)
+
+print(nome\_do\_arquivo.read())
+
+OBS: O PYTHON UTILIZA UM RECURSO PARA TRABALHAR COM ARQUIVOS CHAMADO CURSOR. ESSE CURSOR, FUNCIONA COMO O CURSOR QUANDO ESTAMOS ESCREVENDO
+
+OBS: A FUNÇÃO read() LE TODO O CONTEUDO DO ARQUIVO
+
+ret à TRANSFORMA TODO O ARQUIVO EM string
+
+
+Seek E Cursors
+
+seek() à É UTILIZADA PARA MOVIMENTAR O CURSOR PELO ARQUIVO
+
+
+seek() à A FUNÇÃO seek() É UTILIZADA PARA A MOVIMENTAÇÃO DO CURSOR PELO ARQUIVO. ELA RECEBE UM PARAMETRO QUE INDICAC ONDE QUEREMOS COLOCAR O CURSOR
+
+MOVIMENTANDO O CURSOR PELO ARQUIVO COM A FUNÇÃO seek()
+
+arquivo>seek(0)
+
+
+readline() à IMPRIME POR LINHA A LINHA O TEXTO
+
+readlines() à IMPREME TODAS A LINHAS TA EM PLURAL
+
+OBS: QUANDO ABRIMOS UM ARQUIVO COM A FUNÇÃO open() É CRIADA UMA CONEXÃO ENTRE O ARQUIVO NO DISCO DO COMPUTADOR E O NOSSO PROGRAMA, ESSA CONEXÃO É CHAMADA DE STREAMING, AO FINALIZAR OS TRABALHOS COM O ARQUIVO DEVEMOS FECHAR ESSA CONEXAO PARA ISSO UTILIZAMOS A FUNÇAO close()
+
+PASSOS PARA SE TRABALHAR COM UM ARQUIVO
+
+1 à ABRIR O ARQUIVO
+
+2 à TRABALHAR O ARQUIVO
+
+3 à FECHAR O ARQUIVO
+
+
+closed() à VERIFICA SE O ARQUIVO ESTA ABERTO OU FECHADO ENTAO ELE IRA DIZER True OU False
+
+SE TIVER FECHADO ELE IRA DIZER True
+
+SE TIVER ABERTO ELE IRA DIZER False
+
+OBS: SE TENTARMOS MANIPULAR O ARQUIVO APÓS SEU FECHAMENTO TEREMOS UM ValueError
+
+read(5) à POSSO LIMITAR OS CARACTERES COLOCANDO UM NUMERO NO read(NUMEROO\_DE\_CARACTERES) INDICANDO QUANTO CARACTERES EU QUERO IMPRIMIR
+
+COM A FUNÇÃO read() PODEMOS LIMITAR A QUANTIDADE DE CARACTERES A SEREM LIDOS NO ARQUIVO
+
+
+O BLOCO WITH
+
+PASSO PARA SE TRABALHAR COM ARQUIVOS
+
+1 – ABRIMOS O ARQUIVO
+
+2 – MANIPULAMOS O ARQUIVO
+
+3 – FECHAMOS O ARQUIVO
+
+O Block with É UTILIZADO PARA CRIAR UM CONTEXTO DE TRABALHO ONDE OS RECURSOS UTILIZADOS SÃO FECHADOS APÓS O bloco with
+
+O block with – FORMA PYTHONICA DE MANIPULAR ARQUIVOS
+
+with open(‘nome\_do\_arquivo’) as arquivo:
+
+----print(arquivo.readlines())
+
+
+ESCREVENDO EM ARQUIVOS
+
+OBS: AO ABRIR UM ARQUIVO PARA LEITURA, NÃO PODEMOS REALIZAR A ESCRITA NELE, APENAS LER DA MESMA FORMA, SE ABRIRMOS UM ARQUIVO PARA ESCRITA, NÃO PODEMOS LÊ-LO, SOMENTE ESCREVER NELE
+
+OBS: AO CRIAR UM ARQUIVO PARA ESCRITA, O ARQUIVO É CRIADO NO SISTEMA OPERACIONAL
+
+EXEMPLOS DE ESCRITA – MODO ‘w’ – write (ESCRITA)
+
+with open(‘novo.txt’, ‘w’) as arquivo:
+
+----arquivo.write(‘Escrever dados em arquivo é muito facil’)
+
+PARA ESCREVERMOS DADOS EM UM ARQUIVO, APÓS ABRIR O ARQUIVO UTILIZAMOS A FUNÇÃO write(), ESTÁ FUNÇÃO RECEBE UMA STRING COMO PARAMETRO, CASO CONTRARIO TEREMOS UM TypeError
+
+ABRINDO UM ARQUIVO PARA ESCRITA COM O MODO ‘w’, SE O ARQUIVO NÃO EXISTIR SERA CRIADO, CASO ELE JÁ EXISTA, O ANTERIOR SERA APAGADO E UM NOVO SERA CRIADO. DESSA FORMA, TODO O CONTEUDO NO ARQUIVO ANTERIOR E PERDIDO
+
+MODOS DE ABERTURA DE ARQUIVOS
+
+r à ABRE PARA LEITURA – PADRÃO
+
+w à ABRE PARA ESCRITA – SOBRESCREVE CASO O ARQUIVO JÁ EXISTA
+
+x à ABRE PARA ESCRITA – SOMENTE SE O ARQUIVO NÃO EXISTIR, CASO O ARQUIVO EXISTA GERA FileExistsError
+
+a à ABRE PARA ESCRITA, ADICIONANDO O CONTEUDO AO FINAL DO ARQUIVO
+
+OBS: ABRINDO NO MODO ‘a’ à append, SE O ARQUIVO NÃO EXISTIR SERA CRIADO, CASO EXISTA, O NOVO CONTEUDO SERA ADICIONADO AO FINAL DO ARQUIVO SEMPRE, COMO O MODO ‘a’ NÃO CONTROLAMOS O CURSOR
+
+\+ à ABRE PARA O MODO DE ATUALIZAÇÃO: LEITURA E ESCRITA
+
+with open(‘university.txt’, ‘x’) as arquivo:
+
+----arquivo.write(‘teste de conteúdo. \n’)
+
+EXEMPLO x
+
+try:
+
+----with open(‘university.txt’, ‘x’) as arquivo:
+
+--------arquivo.write(‘teste de conteúdo. \n’)
+
+except FileExistsError:
+
+----print(‘Arquivo já existe’)
+
+EXEMPLO a
+
+with open(‘frutas.txt’, ‘a’) as arquivo:
+
+----while True:
+
+--------fruta = input(‘informe uma fruta ou sair: ‘)
+
+--------if fruta != ‘sair’:
+
+------------arquivo.write(fruta)
+
+------------arquivo.write(‘\n’)
+
+--------else:
+
+------------break
+
+NÃO TEM COM ADICIONAR TEXTO NO TOPO
+
+
+
+
+StringIO
+
+ATENÇÃO à PARA LER OU ESCREVER DADOS EM ARQUIVOS DO SISTEMA OPERACIONAL O SOFTWARE PRECISA TER PERMISSÃO
+
+\- PERMISSAO DE LEITURA à PARA LER O ARQUIVO
+
+\- PERMISSÃO DE ESCRITA à PARA ESCREVER O ARQUIVO
+
+StringIO à UTILIZADO PARA LER E CRIAR ARQUIVOS EM MEMORIA
+
+PRIMEIRO FAZEMOS O IMPORT
+
+from io import StringIO
+
+mensagem = ‘este e ‘
+
+PODEMOS CRIAR UM ARQUIVO EM MEMORIA JÁ COM UMA STRING INSERIDA OU MESMO VAZIO PARA INSERIMOS TEXTO DEPOIS
+
+arquivo = StringIO(mensagem)
+
+AGORA TENDO O ARQUIVO, PODEMOS UTILIZAR TUDO QUE JÁ SABEMOS
+
+print(arquivo.read())
+
+ESCREVENDO OUTROS TEXTOS
+
+arquivo.write(‘outro texto’)
+
+PODEMOS INCLUSIVE MOVIMENTAR O CURSOR
+
+arquivo.seek(0)
+
+SISTEMA DE ARQUIVOS – NAVEGAÇÃO
+
+PARA FAZER USO DE MANIPULAÇÃO DE ARQUIVOS DO SISTEMA OPERACIONAL, PRECISAMOS IMPORTAR E FAZER MODUO OS
+
+os à Operating System – SISTEMA OPERACIONAL
+
+FAZER O IMPORT
+
+import os
+
+getcwd() à PEGA O CURRENT WORK DIRECTORY – DIRETORIO DE TRABALHO CORRENTE
+
+PARA MUDAR O DIRETÓRIO, PODEMOS UTILIZAR O chdir()
+
+os.chdir(‘..’)
+
+OBS: SE VOCE INFELIZMENTE, ESTIVER UTILIZANDO UM COMPUTADOR COM WINDOWS, TERA QUE TER CUIDADO AO VERIFICAR DIRETORIOS
+
+PODEMOS CHECAR SE UM DIRETORIO É ABSOLUTO OU RELATIVO
+
+print(os.path.isabs(‘c:\\Users’)) à DUPLO BARRA PARA O PYTHON NÃO ACHAR QUE E UMA FUNÇÃO
+
+PODEMOS IDENTIFICAR O SISTEMA OPERACIONAL COM O MÓDULO os
+
+print(os.name) – posix (LINUX E MAC), nt (WINDOWS)
+
+
+PODEMOS TER MAIS DETALHES NO SISTEMA OPERACIONAL
+
+print(os.uname())
+
+print(os.getcwd()) # /media/sf\_Documents/vm/PycharmProjects/guppe
+
+res = os.path.join(os.getcwd(), ‘geek’)
+
+os.chdir(res)
+
+print(os.getcwd()) # /media/sf\_Documents/vm/PycharmProjects/guppe/geek/university
+
+VEJA QUE O os.path.join() RECEBE DOIS PARAMETROS, SENDO O PRIMEIRO O DIRETORIO ATUAL E O SEGUNDO O DIRETORIO QUE SERA JUNTADO AO ATUAL
+
+join à É JUNTAR UMA PALAVRA QUE VOCE PEDIU
+
+PODEMOS LISTAR OS ARQUIVOS E DIRETORIOS COM O listdir()
+
+print(os.listdir())
+
+PODEMOS LISTAR OS ARQUIVOS E DIRETORIOS COM MAIS DETALHES COM scandir()
+
+print(os.scandir()) à SE QUISERMOS UMA LISTA TEREMOS QUE CONVERTER
+
+print(list(os.scandir()))
+
+
+
+
+
+print(arquivos[0].inode()) à NUMERAÇÃO DA ARVORE DE DIRETORIOS
+
+print(arquivos[0].name) à NOME DO ARQUIVO
+
+print(arquivos[0].is\_file()) à É UM ARQUIVO? True
+
+print(arquivos[0].is\_dir()) à É UM DIRETÓRIO? False
+
+print(arquivos[0].is\_symlink()) à É UM LINK SIMBOLICO? False
+
+print(arquivos[0].path) à CAMINHO ATE O ARQUIVO
+
+print(arquivos[0].stat()) à INFORMAÇÕES ESTATISTICAS 
+
+OBS: QUANDO UTILIZAMOS A FUNÇÃO scandir() NOS PRECISAMOS FECHÁ-LA, ASSIM QUANDO ABRIMOS UM ARQUIVO
+
+scanner.close()
+
+
+SISTEMAS DE ARQUIVOS MANIPULAÇÃO
+
+DESCOBRINDO SE UM ARQUIVO OU DIRETORIO EXISTE
+
+print(os.path.exists(‘nome\_do\_arquivo.tipo\_do\_arquivo’)) à PARA SABER SE EXISTE NO DIRETORIO E RETORNA False OU True
+
+VERIFICANDO SE O DIRETORIO EXISTE
+
+print(os.path.exists(‘nome\_do\_diretorio)) à COLOCA O NOME DO DIRETORIO SEM PRECISAR DO TIPO DO ARQUIVO
+
+
+Paths ABSOLUTOS
+
+print(os.path.exists(‘/home/geek/university’)) 
+
+CRIANDO ARQUIVOS
+
+FORMA 1
+
+open(‘arquivo-teste.txt’ , ‘w’).close()
+
+FORMA 2
+
+open(‘arquivo-teste2.txt’ , ‘a’).close()
+
+FORMA 3
+
+with open(‘arquivo-teste3.txt’, ‘w’) as arquivo:
+
+----pass
+
+MELHOR FORMA
+
+import os
+
+os.mknod(‘arquivo-teste4.txt’)
+
+os.mknode(‘/home/geek/university.txt’)
+
+OBS: SE VOCE ESTIVER UTILIZANDO NO Mac OS, PODE HAVER UM ERRO DE PermissionError
+
+OBS: CRIANDO UM ARQUIVO VIA mknod() SE O ARQUIVO JÁ EXISTIR TEREMOS O ERRO FileExistsError
+
+PARA CRIAR DIRETORIOS – UNICOS (UM A UM)
+
+import os
+
+os.mkdir(‘templates’)
+
+OBS: A FUNÇÃO mkdir() CRIA UM DIRETORIO SE ESTE NÃO EXISTIR, CASO EXISTA, TEREMOS FileExistsError
+
+OBS: SE NÃO TIVERMOS PERMISSÃO PARA CRIAR O DIRETORIO TEREMOS UM PermissionError
+
+CRIANDO VARIOS DIRETORIOS DE UMA VEZ
+
+MULTI-DIRETORIOS (ARVORE DE DIRETORIOS)
+
+import os
+
+os.makedirs(‘templates/geek/university’)
+
+OBS: SE JA EXISTIR, TEREMOS UM FileExistsError, MAS SE TIVER SOMENTE UM QUE AINDA NÃO FOI CRIADO NÃO IRA DAR ERROR
+
+import os
+
+os.makedirs(‘templates/geek/university’, exist\_ok=True) à SE EXISITIR IGNORA NÃO DA ERRO
+
+
+
+RENOMEAR ARQUIVOS E DIRETORIOS
+
+os.rename(‘template2’, ‘geek2’) à PRIMEIRO NOME DO ARQUIVO E O SEGUNDO NOME SERA O NOVO NOME
+
+OBS: SE O DIRETORIO NÃO EXISTIR TEREMOS UM FileNotFoundError
+
+OBS: SE O DIRETORIO QUE QUEREMOS RENOMEAR NÃO ESSTIVER VAZIO, TEREMOS UM OSError
+
+RENOMEANDO ARQUIVOS
+
+os.rename(‘geek2/novo2/outro2/teste.txt’, ‘geek2/novo2/outro2/geek.txt’)
+
+
+COMO DELETAR ARQUIVOS
+
+OBS: ATENÇÃO TOME CUIDADO COM OS COMANDOS DE DELEÇÃO, AO DELETARMOS UM ARQUIVO OU DIRETORIO, ELES NÃO VAO PARA A LIXEIRA, ELES SOMEM
+
+import os
+
+os.remove(‘geek.txt’)
+
+OBS: SE VOCE ESTIVER NO WINDOWS E O ARQUIVO QUE VOCE FOR DELETAR ESTIVER EM USO, VOCÊ TERA UM ERRO
+
+OBS: SE O ARQUIVO NÃO EXISTIR TEREMOS UM FileNotFoundError
+
+OBS: SE VOCE INFORMAR UM DIRETORIO AO INVES DE UM ARQUIVO, TEREMOS UM IsADirectoryError
+
+REMOVENDO DIRETÓRIOS VAZIOS
+
+import os
+
+os.rmdir(‘Templates’)
+
+OBS: SE O DIRETORIO TIVER QUALQUER CONTEUDO TEREMOS UM OSError
+
+OBS: SE O DIRETORIO NÃO EXISTIR TEREMOS UM FileNotFoundError
+
+REMOVENDO UMA ARVORE DE ARQUIVOS
+
+import os 
+
+for arquivo in os.scandir(‘geek2’):
+
+----if arquivo.is\_file():
+
+--------os.remove(arquivo.path)
+
+PODEMOS REMOVER UMA ARVORE DE DIRETORIOS VAZIOS
+
+import os
+
+os.removedirs(‘geek2/mais’)
+
+#SE ALGUM DOS DIRETORIOS CONTIVER ARQUIVOS OU OUTROS DIRETORIAS, O PROCESSO PARA
+
+
+sudo apt-get install lsb-core
+
+pip install send2trash
+
+IMPORTANDO A BIBLIOTECA send2trash (ENVIA ARQUIVOS E DIRETORIOS PARA A LIXEIRA)
+
+from send2trash import send2trash
+
+os.remove(‘cesta1.txt’) à NÃO VAI PARA A LIXEIRA, É DELETADO IMEDIATAMENTE
+
+send2trash(‘cesta2.txt’) à VAI PARA LIXEIRA PODE SER RESTAURADO
+
+OBS: SE O ARQUIVO NÃO EXISTIR TEREMOS OSError
+
+send2trash(‘diretorio’) 
+
+TRABALHANDO COM ARQUIVOS E DIRETORIOS TEMPORARIOS
+
+import os
+
+import tempfile
+
+with tempfile.TemporaryDirectory() as tmp:
+
+----print(f’criei o diretorio temporario em {tmp}’)
+
+----with open(os.path.join(tmp, ‘arquivo\_temporario.txt’), ‘w’) as arquivo:
+
+--------arquivo.write(‘geek university\n’)
+
+----input()
+
+
+ESTAMOS CRIANDO UM DIRETORIO TEMPORARIO, ABRINDO O MESMO O DENTRO DELE CRIANDO UM ARQUIVO PARA ESCREVERMOS UM TEXTO. NO FINAL, USAMOS
+
+UM input() SO PARA MANTERMOS OS ARQUIVOS TEMPORARIOS ‘VIVOS’ DENTRO DOS BLOCOS with
+
+OBS: POSSIVELMENTE, O CODIGO ACIMA NÃO IRA FUNCIONAR SE VOCE ESTIVER UTILIZANDO O WINDOWS, POR CONTA DESSE SISTEMA TRABALHAR DE FORMA DIFERENTE COM ARQUIVOS TEMPORARIOS
+
+OBS: EM ARQUIVOS TEMPORARIOS SO CONSEGUIMOS ESCREVER bits POR ISSO UTILIZAMOS b’ ‘
+
+ENTENDENDO ITERATORS E ITERABLES
+
+ITERATOR à UM OBJETO QUE PODE TER ITERADO
+
+- UM OBJETO QUE RETORNA UM DADO, SENDO UM ELEMENTO POR VEZ QUANDO UMA FUNÇÃO next() É CHAMADA;
+
+ITERABLE à UM OBJETO QUE IRA RETORNAR UM ITERATOR QUANDO A FUNÇÃO iter() FOR CHAMADA
+
+nome = ‘geek’ à A STRING É UM ITERABLE MAS NÃO UM ITERATOR
+
+numeros = [1, 2, 3] à LISTA É UM ITERABLE MAS NÃO UM ITERATOR
+
+it1 = iter(nome)
+
+it2 = iter(numeros)
+
+print(next(numeros))
+
+StopIteration à ERRO QUANDO OS VALORES ITER JÁ FOI TODOS DADO
+
+for letra in nome:
+
+----print(f’{letra}’)
+
+CRIANDO SUA PROPRIA VERSÃO DE loop
+
+for num in [1, 2, 3, 4, 5]:
+
+----print(num)
+
+for letra in ‘geek’:
+
+----print(letra)
+
+COMO CRIAR UM LOOP
+
+def meu\_for(interavel):
+
+----it = iter(interavel)
+
+----while True:
+
+--------try: 
+
+------------print(next(it))
+
+--------except StopIteration:
+
+------------break
+
+meu\_for(‘geek university’)
+
+ESCREVENDO UM INTERADOR CUSTOMIZADO
+
+
+
+class contador:
+
+----def \_\_\_init\_\_(self, menor, maior):
+
+--------self.menor = menor
+
+--------self.maior = maior
+
+----def \_\_inter\_\_(self):
+
+--------return self
+
+----def \_\_next\_\_(self):
+
+--------if self.menor < self.maior:
+
+------------numero = self.maior:
+
+------------self.menor = self.menor + 1
+
+------------return numero
+
+--------raise StopIteration
+
+for n in Contador(1, 61):
+
+----print(n)
+
+for n in range(1, 61):
+
+----print(n)
+
+
+
+
+GERADORES
+
+Geradores (Generators) são Iterators (Iteradores):
+
+OBS: O CONTRARIO NÃO E VERDADEIRO, OU SEJA, NEM TODO ITERATOR É UM GENERATOR
+
+OUTRAS INFORMAÇÕES:
+
+\- GENERATORS PODEM SER CRIADOS COM FUNÇÕES GERADORAS
+
+\- FUNÇÕES GERADORAS UTILIZAMO A PALAVRA RESERVADA yield:
+
+\- GENERATORS PODEM SER CRIADOS COM EXPRESSOES GERADORAS
+
+DIFERENÇAS ENTRE FUNÇOES E GENERATOR FUNCTIONS (FUNÇÕES GERADORAS)
+
+|FUNÇOES                                               |GENERATOR FUNCTIONS
+
+|UTILIZAM return                                  |UTILIZAM yield
+
+|RETORNA UMA VEZ                             |PODEM UTILIZAR yield MULTIPLAS VEZES
+
+|QUANDO EXECUTADA,                        |QUANTO EXECUTADA, RETORNA UM              
+
+|RETORNA UM VALOR                           |GENERATOR
+
+
+
+
+
+
+EXEMPLO FUNÇÃO GERADORA (GENERATOR FUCTION)
+
+def conta\_ate(valor\_maximo):
+
+----contador = 1
+
+----while contador <= valor\_maximo:
+
+--------yield contador 
+
+--------contador = contador + 1
+
+OBS: UMA GENERATOR FUNCTION NÃO E UM GENERATOR, ELA GERA UM GENERATOR
+
+gen = conta\_ate(10)
+
+print(next(gen))
+
+print(‘geek’)
+
+for num in gen:
+
+----print(num)
+
+
+TESTE DE MEMORIA COM GENERATORS
+
+SEQUENCIA DE FIBONACCI
+
+1, 1, 2, 3, 5, 8, 13... à SOMA COM NUMERO ANTERIOR
+
+
+FUNÇÃO USANDO LISTAS 449MB
+
+def fib\_lista(max):
+
+----nums = []
+
+----a, b = 0, 1
+
+----while len(nums) < max:
+
+--------nums.append(b)
+
+--------a, b = b, a + b
+
+----return nums
+
+TESTE 1 – 449mb
+
+for n in fib\_lista(100):
+
+----print(n)
+
+FUNÇÃO USANDO GERADORES 3MB
+
+def fib\_gen(max):
+
+----a, b, contador = 0, 1, 0
+
+----while contador < max:
+
+--------a, b = b, a + b
+
+--------yield a
+
+--------contador = contador + 1 
+
+TESTE 2 GERADORES 3MB
+
+for n in fib\_gen(100):
+
+----print(n)
+
+SEMPRE USAR GENERATOR EXPRESSION PQ É MAIS RAPIDA
+
+print(sum(num for num in range(10000)))
+
+DECORADORES EM PYTHON
+
+FUNÇÕES DE MAIOR GRANDEZA – HIGHER ORDER FUNCTIONS – HOF
+
+O QUE ISSO SIGNIFICA?
+
+\- QUANDO UMA LINGUAGEM DE PROGRAMAÇÃO SUPORTA HOF, INDICA QUE PODEMOS TER FUNÇÕES QUE RETORNAM OUTRAS FUNÇÕES COMO RESULTADO OU MESMO QUE PODEMOS PASSAR FUNCÕES COMO ARGUMENTOS PARA OUTRAS FUNÇÕES, E ATE MESMO CRIAR VARIAVEIS DO TIPO DE FUNÇÕES NOS NOSSOS PROGRAMAS
+
+OBS: NA SEÇÃOA DE FUNÇÕES, NOS UTILIZAMOS ISSO
+
+EM PYTHON, AS FUNÇÕES SÃO CIDADOES DE PRIMEIRA CLASSE, FIRST CLASS CITIZEN
+
+EXEMPLO – DEFININDO AS FUNÇÕES
+
+def somar(a, b):
+
+----return a + b
+
+def diminuir(a, b):
+
+----return a – b
+
+def multiplicar(a , b):
+
+return a \* b
+
+def dividir(a, b):
+
+----return a / b
+
+def calcular(num1, num2, funcao):
+
+----return funcao(num1, num2)
+
+TESTANDO AS FUNÇÕES
+
+print(calcular(4, 3, somar))
+
+print(calcular(4, 3, diminuir))
+
+print(calcular(4, 3, multiplicar))
+
+print(calcular(4, 3, dividir))
+
+Nested Functions – Funções aninhadas 
+
+EM PYTHON PODEMOS TAMBEM TER FUNÇÕES DENTRO DE FUNÇÕES, QUE SÃO CONHECIDAS POR Nested Functions OU TAMBEM Inner Functions (Funções Internas)
+
+EXEMPLO
+
+def cumprimento(pessoa):
+
+----def humor():
+
+--------return choice((‘e ai’, ‘suma daqui’, ‘gosto muito de voce’))
+
+----return humor() + pessoa
+
+TESTANDO
+
+print(cumprimento(‘Angelina’))
+
+print(cumprimento(‘Felicity’))
+
+RETORNANDO FUNÇÕES DE OUTRAS FUNÇÕES
+
+from random import choice
+
+def faz\_me\_rir():
+
+----def rir():
+
+--------return choice((‘hahahaha’, ‘kkkkk’, ‘yayayaya’))
+
+----return rir
+
+TESTANDO
+
+rindo = faz\_me\_rir()
+
+print(rindo())
+
+Inner Fuctions (Funções Internas / Nested Fuctions) PODEM ACESSAR O ESCOPO DE FUNÇÕES MAIS EXTERNAS
+
+from random import choice
+
+def faz\_me\_rir\_novamente(pessoa):
+
+----def dando\_risada():
+
+--------risada = choice((‘hahahaha’, ‘lolollololo’, ‘kkkkkkkkk’))
+
+--------return f’{risada} {pessoa}’
+
+----return dando\_risada
+
+TESTANDO 
+
+rindo = faz\_me\_rir\_novamente(‘fernanda’)
+
+print(rindo())
+
+O QUE SÃO DECORADORES
+
+DECORADORES (Decorators)
+
+\- Decorators SÃO FUNÇÕES
+
+\- Decorators ENVOLVEM OUTRAS FUNÇÕES E APRIMORAM SEUS COMPORTAMENTOS
+
+\- Decorators TAMBEM SÃO EXEMPLOS DE Higher Order Fuctions
+
+\- Decorators TEM UMA SITNA PROPRIA, USANDO “@” (Syntact Sugar/ Açucar Sintatico)
+
+EXEMPLOS
+
+DECORATORS COMO FUNÇÕES (SINTAXE NÃO RECOMENDADA / SEM AÇÚCAR SINTATICO)
+
+def seja\_educado(funcao):
+
+----def sendo():
+
+--------print(‘Foi um prazer conhecer você’)
+
+--------funcao()
+
+--------print(‘Tenha um ótimo dia’)
+
+----return sendo
+
+def saudação():
+
+----print(‘Seja bem-vindo(a) a geek university’)
+
+TESTANDO 1
+
+teste = seja\_educado(saudação)
+
+teste()
+
+TESTANDO 2
+
+def raiva():
+
+----print(‘EU TE ODEIO’)
+
+raiva\_educada = seja\_educado(raiva)
+
+raiva\_educada()
+
+FORMA RECOMENDADA
+
+Decorators com Syntax Sugar (Açucar Sintatico)
+
+def seja\_educado\_mesmo(funcao):
+
+----def sendo\_mesmo():
+
+--------print(‘Foi um prazer conhecer voce’)
+
+--------funcao()
+
+--------print(‘Tenha um excelente dia’)
+
+----return send\_mesmo
+
+@seja\_educado\_mesmo à FORMA CERTA DE DECORAR UMA FUNCAO
+
+def apresentando():
+
+----print(‘Meu nome é pedro’)
+
+TESTANDO
+
+apresentando()
+
+OBS: NÃO CONFUNDA DECORATOR COM DECORATOR FUNCTION
+
+DECORADORES COM DIFERENTES ASSINATURAS
+
+PARA RESOLVER FUNÇÕES COM DOIS PARAMETROS, UTILIZAMOS UM PADRAO DE PROJETO CHAMADO DECORATOR PATTERN
+
+A ASSINATURA DE UMA FUNÇÃO É REPRESENTADA PELO SEU RETORNO, NOME E PARAMETROS DE ENTRADA
+
+OBS: VALE LEMBRAR QUE PODEMOS UTILIZAR PARAMETROS NOMEADOS
+
+DECORATOR COM ARGUMENTOS
+
+def verifica\_primeiro\_argumento(valor):
+
+----def interna(funcao):
+
+--------def outra(\*args, \*\*kwargs):
+
+------------if args and args[0] !=valor:
+
+----------------return f’Valor incorreto
+
+------------return funcao(\*args, \*\*kwargs)
+
+--------return outra
+
+----return interna 
+
+@verifica\_primeiro\_argumento(‘pizza’)
+
+def comida\_favorita(\*args):
+
+----print(args)
+
+PRESERVANDO METADATA COM Wraps
+
+METADATAS à SÃO DADOS INTRÍSECOS EM ARQUIVOS
+
+WRAPS à SÃO FUNÇÕES QUE ENVOLVEM ELEMENTOS COM DIVERSAS FINALIDADES
+
+PROBLEMA
+
+def ver\_log(funcao):
+
+----def logar(\*args, \*\*kwargs):
+
+--------“””EU SOU UMA FUNÇÃO (logar) DENTRO DE OUTRA”””
+
+--------print(f’Voce esta chamando {funcao.\_\_name\_\_}’)
+
+--------print(‘Aqui a documentação: {funcao.\_\_doc\_\_}’)
+
+--------return funcao(\*args, \*\*kwargs)
+
+----return logar
+
+@ver\_log
+
+def soma(a, b):
+
+----“””soma dois numeros”””
+
+----return a + b
+
+#print(soma(10, 30))
+
+print(soma.\_\_name\_\_) # SOMA
+
+print(soma.\_\_doc\_\_) # SOMA DOIS NUMEROS
+
+RESOLUÇÃO DO PROBLEMA
+
+from functools import wraps
+
+def ver\_log(funcao):
+
+----@wraps(funcao) à 	COM ISSO JÁ RESOLVEMOS O ERRO
+
+----def logar(\*args, \*\*kwargs):
+
+--------“””EU SOU UMA FUNÇÃO (logar) DENTRO DE OUTRA”””
+
+--------print(f’Voce esta chamando {funcao.\_\_name\_\_}’)
+
+--------print(‘Aqui a documentação: {funcao.\_\_doc\_\_}’)
+
+--------return funcao(\*args, \*\*kwargs)
+
+----return logar
+
+@ver\_log
+
+def soma(a, b):
+
+----“””soma dois numeros”””
+
+----return a + b
+
+print(soma(10, 30))
+
+print(soma.\_\_name\_\_) # SOMA
+
+print(soma.\_\_doc\_\_) # SOMA DOIS NUMEROS
+
+FORÇANDO TIPOS DE DADOS COM UM DECORATOR
+
+EM JAVA ESPECIFICAMOS O TIPO DE DADO EXEMPLO
+
+int numero = 10;
+
+String nome = “felicity”;
+
+ZIP
+
+a = (1, 3, 5)
+
+b = (2, 4, 6)
+
+c = zip(a, b)
+
+(1, 2), (3, 4), (5, 6)
+
+
+
+
+
+
+
+
+
+def forca\_tipo(\*tipos):
+
+----def decorador(funcao):
+
+--------def converte(\*args, \*\*kwargs):
+------------novo args = []
+
+------------for(valor, tipo) in zip(args, tipos):
+
+----------------novo\_args.append(tipo(valor))
+
+------------return funcao(\*novo\_args, \*\*kwargs)
+
+--------return convert
+
+----return decorador
+
+@forca\_tipo(str, int)
+
+def repete\_msg(msg, vezes):
+
+----for vez in range(vezes):
+
+--------print(msg)
+
+repete\_msg(‘geek’, ‘3’)
+
+@forca\_tipo(float, float)
+
+def dividir(a, b):
+
+----print(a/b)
+
+dividir(‘1’, 5)
+
+
+ORIENTAÇÃO A OBJETOS
+
+
+
+PROGRAMAÇÃO ORIENTADA A OBJETOS – POO
+
+\- POO É UM PARADIGMA DE PROGRAMAÇÃO QUE UTILIZA QUE MAPEAMENTO
+
+DE OBJETOS DO MUNDO REAL PARA MODELOS COMPUTACIONAIS
+
+\- PARADIGMA DE PROGRAMAÇÃO É A FORMA/METODOLOGIA UTILIZADA PARA PENSAR/DESENVOLVER SISTEMAS
+
+PRINCIPAIS ELEMENTOS DA ORIENTAÇÃO A OBJETOS
+
+\- CLASSE à MODELO DO OBJETO DO MUNDO REAL SENDO REPRESENTADO COMPUTACIONALMENTE
+
+\- ATRIBUTO à CARACTERISTICAS DO OBJETO
+
+\- METODO à COMPORTAMENTO DO OBJETO (FUNÇÕES)
+
+\- CONSTRUTOR à METODO ESPECIAL UTILIZADO PARA CRIAR OS OBJETOS
+
+\- OBJETO à INSTANCIA DE CLASSE
+
+
+
+
+
+
+
+
+
+
+EXEMPLO
+
+numero = 10
+
+print(numero)
+
+print(type(numero))
+
+nome = ‘geek’
+
+print(nome)
+
+print(type(nome))
+
+class produto:
+
+----pass
+
+ps4 = produto()
+
+print(ps4)
+
+print(type(ps4))
+
+
+
+
+
+
+
+CLASSES
+
+POO – CLASSES
+
+EM POO, CLASSES NADA MAIS SÃO DO QUE MODELOS DOS OBJETOS DO MUNDO REAL SENDO REPRESENTADOS COMPUTACIONALMENTE
+
+IMAGINE QUE VOCE QUEIRA FAZER UM SISTEMA PARA AUTOMATIZAR O CONTROLE DAS LAMPADAS DA SUA CASA
+
+Class PODEM CONTER
+
+\- ATRIBUTOS à REPRESENTAM AS CARACTERISTICAS DO OBJETO, OU SEJA, PELOS ATRIBUTOS CONSEGUIMOS REPRESENTAR COMPUTACIONALMENTE OS ESTADOS DE UM OBJETO. NO CASO DA LAMPADA, POSSIVELMENTE IRIAMOS QUERER SABER SE A LAMPADA É 110 OU 220 VOLTS, SE ELA É BRANCA, AMARELA, VERMELHA OU OUTRA COR, QUAL É A LUMINOSIDADE DELA E ETC
+
+\- METODOS (FUNÇÕES) à REPRESENTAM OS COMPORTAMENTOS DO OBJETO. OU SEJA, AS AÇÕES QUE ESTE OBJETO PODE REALIZAR NO SEU SISTEMA, NO CASO DA LAMPADA, POR EXEMPLO, UM COMPORTAMENTO COMUM QUE MUITO PROVAVELMENTE IRIAMOS QUERER REPRESENTAR NO NOSSO SISTEMA É O DE LIGAR E DESLIGAR A MESMA
+
+EM PYTHON, PARA DEFINIR UMA CLASSE UTILIZAMOS A PALAVRA RESERVADA CLASS
+
+OBS: UTILIZAMOS A PALAVRA ‘PASS’ EM PYTHON QUANDO TEMOS UM BLOCO DE CODIGO QUE AINDA NÃO ESTA IMPLEMENTADO
+
+OBS: QUANDO NOMEAMOS NOSSAS CLASSES EM PYTHON UTILIZAMOS POR CONVENÇÃO O NOME COM INICIAL EM MAIUSCULO, SE O NOME FOR COMPOSTO, UTILIZA-SE AS INICIAIS DE AMBAS AS PALAVRAS EM MAIUSCULO, TODAS JUNTAS
+
+DICA GEEK: EM COMPUTAÇÃO NÃO UTILIZAMOS: ACENTUAÇÃO, CARACTERES ESPECIAIS, ESPAÇOS OU SIMILARES PARA NOMES DE CLASES, ATRIBUTOS, MÉTODOS, ARQUIVOS, DIRETORIOS E ETC.
+
+NÃO CONSEGUIMOS CRIAR UMA VARIAVEL COM UM OBJETO DA VIDA REAL ENTAO CRIAMOS A class
+
+EXEMPLOS
+
+class Lampada:
+
+----pass
+
+lamp = Lampada()
+
+print(type(lamp))
+
+
+
+O INT É UMA CLASS PYTHON
+
+OBS: QUANDO ESTAMOS PLANEJANDO UM SOFTWARE E DEFINIMOS QUAIS CLASSES TEREMOS QUE TER NO SISTEMA, CHAMAMOS ESTES OBJETOS QUE SERÃO MAPEADOS PARA CLASSES DE ENTIDADE
+
+
+
+
+
+
+
+POO – ATRIBUTOS
+
+ATRIBUTOS à REPRESENTAM AS CARACTERISTICAS DO OBJETO. OU SEJA, PELOS ATRIBUTOS NOS CONSEGUIMOS REPRESENTAR COMPUTACIONALMENTE OS ESTADOS DE UM OBJETO
+
+EM PYTHON, DIVIDIMOS OS ATRIBUTOS EM 3 GRUPOS
+
+\- ATRIBUTOS DE INSTANCIA
+
+\- ATRIBUTOS DE CLASSE:
+
+\- ATRIBUTOS DINAMICOS
+
+ATRIBUTOS DE INSTANCIA: SÃO ATRIBUTOS DECLARADOS DENTRO DO METODO CONSTRUTOR
+
+OBS: METODO CONSTRUTOR: É UM METODO ESPECIAL UTILIZADO PARA A CONTRUÇÃO DE OBJETO
+
+EM PYTHON
+
+CLASS COM ATRIBUTO EM INSTANCIA PUBLICO
+
+class Lampada:
+
+----def \_\_init\_\_(self, voltage, cor):
+
+--------self.voltagem = voltage
+
+--------self.cor = cor
+
+--------self.ligada = False
+
+SELF NADA MAIS É QUE O OBJETO QUE ESTA EXECUTANDO O METODO
+
+
+O SELF PODE SER ALTERADO POR OUTRA PALAVRA
+
+ATRIBUTOS PUBLICOS E ATRIBUTOS PRIVADOS
+
+SE DECLARAR UM ATRIBUTO COMO PRIVADO SO PODEMOS ALTERAR DENTRO DA CLASS ONDE FOI DECLARADO
+
+EM PYTHON, POR CONVENÇÃO, FICOU ESTABELECIDO QUE, TODO ATRIBUTO DE UMA CLASSE É PUBLICO OU SEJA, PODE SER ACESSADO EM TODO O PROJETO
+
+CASO QUEIRAMOS DEMONSTRAR QUE DETERMINADO ATRIBUTO DEVE SER TRATADO COMO PRIVADO, OU SEJA, QUE DEVE SER ACESSADO/UTILIZADO SOMENTE DENTRO DA PROPRIA CLASS ONDE ESTA DECLARADO, UTILIZA-SE \_\_ DUPLO UNDERSCORE NO INICIO DE SEU NOME
+
+ISSO E CONHECIDO TAMBEM COMO Name Mangling
+
+
+CLASS COM ATRIBUTO EM INSTACIA PRIVADA
+
+class Acesso:
+
+----def \_\_init\_\_(self, email, senha):
+
+--------self.\_\_email = email
+
+--------self.\_\_senha = senha 
+
+O DUPLO UNDERLINE TRANSFORMA A CLASS EM PRIVADO
+
+OBS: LEMBRE – SE QUE ISSO E APENAS UMA CONVENÇÃO, OU SEJA, A LINGUAGEM PYTHON NÃO VAI IMPEDIR QUE FAÇÃMOS ACESSO AOS ATRIBUTOS SINALIZADOS COMO PRIVADOS FORA DA CLASS
+
+EXEMPLO
+
+user = Acesso(‘user@gmail.com’, ‘12345’)
+
+print(user.email)
+
+print(user.\_\_senha) # AttributeError
+
+print(user.\_Acesso\_\_senha) #TEMOS ACESSO, MAS NÃO DEVERIAMOS FAZER ESTE ACESSO(Name Mangling) 
+
+O QUE SIGNIFICA ATRIBUTOS DE INSTANCIA?
+
+\- SIGNIFICA, QUE AO CRIARMOS INSTANCIAS/OBJETOS DE UMA CLASSE TODAS AS INSTACIAS TERAO ESTES ATRIBUTOS
+
+ATRIBUTOS DE CLASSE
+
+\- ATRIBUTOS DE CLASSE, SÃO ATRIBUTOS, CLARO, QUE SÃO DECLARADOS DIRETAMENTE NA CLASSE, OU SEJA, FORA DO CONSTRUTOR. GERALMENTE JÁ INICIALIZAMOS UM VALOR, E ESTE VALOR É COMPARTILHADO ENTRE TODAS AS INSTANCIA DA CLASSE, OU SEJA, AO INVES DE CADA INSTANCIA DA CLASSE TER SEUS PROPRIOS VALORES COMO E O CASO DOS ATRIBUTOS DE INSTANCIA, COM OS ATRIBUTOS DE CLASSE TODAS AS INSTANCIAS TERAO O MESMO VALOR PARA ESTE ATRIBUTO
+
+REFATORAR A CLASSE PRODUTO
+
+
+class Produto:
+
+----Atributo de classe
+
+----imposto = 1.05 # 0.05% de imposto
+
+----def \_\_init(self, nome, descrição, valor):
+
+--------self.nome = nome
+
+--------self.descricao = descrição
+
+--------self.valor = (valor \* Produto.imposto)
+
+p1 = Produto(‘PlayStation 4’, ‘Video Game’, 2300)
+
+p2 = Produto(‘Xbox S’, ‘Video Game’, 4500)
+
+print(p1.valor) à ACESSO POSSIVEL, MAS INCORRETO DE UM ATRIBUTO DE CLASSE
+
+print(p2.valor) à ACESSO POSSIVEL, MAS INCORRETO DE UM ATRIBUTO DE CLASSE
+
+OBS: NÃO PRECISAMOS CRIAR UMA INSTANCIA DE UMA CLASSE PARA FAZER ACESSO A UM ATRIBUTO DE CLASSE
+
+print(Produto.imposto) à ACESSO CORRETO DE UM ATRIBUTO DE CLASSE
+
+ATRIBUTOS DINAMICOS à UM ATRIBUTOS DE INSTANCIA QUE PODE SER CRIADO EM TEMPO DE EXECUÇÃO
+
+OBS: O ATRIBUTO DINAMICO SERA EXCLUSIVO DA INSTANCIA QUE O CRIOU
+
+
+METODOS
+
+POO – METODOS
+
+\- METODOS (FUNÇÕES) à REPRESENTAM OS COMPORTAMENTOS DO OBJETO, OU SEJA, AS AÇÕES QUE ESTE OBJETO PODE REALIZAR NO SEU SISTEMA
+
+EM PYTHON, DIVIDIMOS OS METODOS, EM 2 GRUPOS: METODOS DE INSTACIA E METODOS DE CLASS
+
+METODOS DE INSTANCIA
+
+class Lampada:
+
+----def \_\_index\_\_(self, cor, voltagem, luminosidade):
+
+--------self.\_\_cor = cor
+
+--------self.\_\_voltagem = voltagem
+
+--------self.\_\_luminosidade = luminosidade
+
+class ContaCorrente:
+
+----def \_\_init\_\_(self, numero, limite, saldo):
+
+--------self.\_\_numero = numero
+
+--------self.\_\_limite = limite
+
+--------self.\_\_saldo = saldo
+
+
+
+METODOS DE CLASSE
+
+user = Usuario(‘felicity’)
+
+Usuario.conta\_usuarios() à FORMA CORRETA
+
+user.conta\_usuarios() à POSSIVEL, MAS INCORRETA
+
+METODOS DE CLASSE EM PYTHON SÃO CONHECIDOS COMO METODOS ESTATICOS EM OUTRAS LINGUAGENS
+
+OBJETOS
+
+POO – OBJETOS
+
+OBJETOS à SÃO INSTANCIAS DA CLASS, OU SEJA APÓS O MAPEAMENTO DO OBJETO DO MUNDO REAL PARA SUA REPRESENTAÇÃO COMPUTACIONAL, DEVEMOS PODER CRIAR QUANTOS OBJETOS FOREM NECESSARIOS, PODEMOS PENSAR NOS OBJETOS/INSTANCIAS DE UMA CLASSE COMO VARIAVEIS DO TIPO DEFINIDO NA CLASSE
+
+class Lampada:
+
+----def \_\_index\_\_(self, cor, voltagem, luminosidade):
+
+--------self.\_\_cor = cor
+
+--------self.\_\_voltagem = voltagem
+
+--------self.\_\_luminosidade = luminosidade
+
+lamp1 = Lampada(‘branca’, 110, 60) à INSTANCIAS/OBJETOS
+
+POO - ABSTRAÇÃO E ENCAPSULAMENTO
+
+O GRANDE OBJETIVO DA POO É ENCAPSULAR NOSSO CODIGO DENTRO DE UM GRUPO LOGICO E HIERARQUICO UTILIZANDO CLASSES 
+
+ENCAPSULAR à CAPSULA 
+
+RELEMBRANDO ATRIBUTOS/METODOS PRIVADOS EM PYTHON
+
+IMAGINE QUE TEMOS UMA CLASSE CHAMADA PESSOA, CONTENDO UM ATRIBUTO PRIVADO CHAMADO \_\_nome E UM METODO PRIVADO CHAMADO \_\_falar()
+
+ESSES ELEMENTOS PRIVADOS SÓ DEVEM/DEVERIAM SER ACESSADOS DENTRO DA CLASSE. MAS PYTHON NÃO BLOQUEIA ESTE ACESSO FORA DA CLASSE. COM PYTHON ACONTECE UM FENOMENO CHAMADO NAME MANGKING, QUE FAZ UMA ALTERAÇAO NA FORMA DE SE ACESSAR OS ELEMENTOS PRIVADOS, CONFORME:
+
+\_Classe \_\_elemento
+
+EXEMPLO à ACESSANDO ELEMENTOS PRIVADOS FORA DA CLASSE:
+
+instancia.\_Pessoa\_\_nome
+
+instancia.\_Pessoa\_\_falar()
+
+ABSTRAÇAO, EM POO, E O ATO DE EXPOR APENAS DADOS REVELANTES DE UMA CLASSE, ESCONDENDO ATRIBUTOS E METODOS PRIVADOS DE USUARIO.
+
+
+
+
+HERANÇA E POLIMORFISMO
+
+POO – HERANÇA (INHERITANCE) 
+
+A IDEIA DE HERANÇA É A DE REAPROVEITAR CODIGO, TAMBEM EXTENDER NOSSAS CLASSES
+
+OBS: COM A HERANÇA, A PARTIR DE UMA CLASSE EXISTENTE, NÓS EXTENDEMOS OUTRA CLASSE QUE PASSA A HERDAR ATRIBUTOS E MÉTODOS DA CLASSE HERDADA
+
+CLIENTE
+
+\- NOME
+
+\- SOBRENOME
+
+\- CPF 
+
+\- RENDA
+
+FUNCIONARIO
+
+\- NOME
+
+\- SOBRENOME
+
+\- CPF 
+
+\- MATRICULA
+
+PERGUNTAR PARA SI MESMO: EXISTE ALGUMA ENTIDADE GENERICA O SUFICIENTE PARA ENCAPSULAR OS ATRIBUTOS E METODOS COMUNS A OUTRAS ENTIDADES
+
+
+class Cliente:
+
+----def \_\_init\_\_(self, nome, sobrenome, cpf, renda):
+
+--------self.\_\_nome = nome
+
+--------self.\_\_sobrenome = sobrenome
+
+--------self.\_\_cpf = cpf
+
+--------self.\_\_renda = renda
+
+----def nome\_completo(self):
+
+--------return f’{self.\_\_nome} {self.\_\_sobrenome}’
+
+class Funcionario:
+
+----def \_\_init\_\_(self, nome, sobrenome, cpf, matricula):
+
+--------self.\_\_nome = nome
+
+--------self.\_\_sobrenome = sobrenome
+
+--------self.\_\_cpf = cpf
+
+--------self.\_\_matricula = matricula
+
+----def nome\_completo(self):
+
+--------return f’{self.\_\_nome} {self.\_\_sobrenome}’
+
+
+
+
+
+
+
+REFATORANDO
+
+class Pessoa:
+
+----def \_\_init\_\_(self, nome, sobrenome, cpf):
+
+--------self.\_\_nome = nome
+
+--------self.\_\_sobrenome = sobrenome
+
+--------self.\_\_cpf = cpf
+
+----def nome\_completo(self):
+
+--------return f’{self.\_\_nome} {self.\_\_sobrenome}’
+
+class Cliente(Pessoa):
+
+----def \_\_init\_\_(self, nome, sobrenome, cpf, renda):
+
+--------Pessoa.\_\_init\_\_(self, nome, sobrenome, cpf) à FORMA NÃO COMUM DE ACESSAR DADOS DA SUPER CLASSE E TEMOS QUE COLOCAR O SELF
+
+--------self.\_\_renda = renda
+
+class Funcionario:
+
+----def \_\_init\_\_(self, nome, sobrenome, cpf matricula):
+
+--------super().\_\_init\_\_(nome, sobrenome, cpf) à FORMA COMUM DE ACESSAR DADOS DA SUPER CLASSE
+
+--------self.\_\_matricula = matricula
+
+OBS: QUANDO UMA CLASSE HERDA DE OUTRA CLASSE ELA HERDA TODOS OS ATRIBUTOS E METODOS DA CLASSE HERDADA
+
+QUANDO UMA CLASSE HERDA DE OUTRA CLASSE, A CLASSE HERDADA É CONHECIDA POR:
+
+[PESSOA]
+
+\- SUPER CLASSE
+
+\- CLASSE MAE 
+
+\- CLASSE PAI
+
+\- CLASS BASE
+
+\- CLASS GENÉRICA
+
+QUANDO UMA CLASSE HERDA DE OUTRA CLASSE ELA É CHAMADA:
+
+[ CLIENTE, FUNCIONARIO]
+
+\- SUB CLASSE
+
+\- CLASS FILHA
+
+\- CLASSE ESPECIFICA
+
+
+SOBRESCRITA DE METODOS (OVERRIDING)
+
+\- SOBRESCRITA DE MÉTODO, OCORRE QUANDO REESCREVEMOS/REIMPLEMENTAMOS UM METODO PRESENTE NA SUPER CLASSE EM CLASSES FILHAS
+
+
+PROPRIEDADES – PROPERTIES 
+
+EM LINGUAGENS DE PROGRAMAÇÃO COMO O JAVA, AO DECLARARMOS ATRIBUTOS PRIVADOS NAS CLASSES, COSTUMAMOS A CRIAR METODOS PUBLICOS PARA MANIPULAÇÃO DESSES ATRIBUTOS, ESSES METODOS SÃO CONHECIDOS POR getters E setters, ONDE OS getters RETORNAM O VALOR DO ATRIBUTO E OS setters ALTERAM O VALOR DO MESMO
+
+PRIMEIRO AS @property E DEPOIS METODOS DE INSTANCIA
+
+
+O METODO super()
+
+O METODO super() SE REFERE A SUPER CLASSE
+
+
+HERANÇA MULTIPLA
+
+HERANÇA MULTIPLA NADA MAIS É DO QUE A POSSIBILIDADE DE UMA CLASSE HERDAR DE MULTIPLAS CLASSES FAZENDO COM QUE A CLASSE FILHA HERDE TODOS OS ATRIBUTOS E METODOS DE TODAS AS CLASSES HERDADAS
+
+OBS: A HERANÇA MULTIPLA PODE SER FEITA DE DUAS MANEIRAS 
+
+\- POR MULTIDERIVAÇÃO DIRETA
+
+\- POR MULTIDERIVAÇÃO INDIRETA
+
+EXEMPLO 1 – MULTIDERIVAÇÃO DIRETA
+
+class Base1:
+
+----pass
+
+class Base2:
+
+----pass
+
+class MultiDerivada(Base1, Base2):
+
+----pass
+
+EXEMPLO 2 – MULTIDERIVAÇÃO INDIRET
+
+class Base1:
+
+----pass
+
+class Base2(Base1):
+
+----pass
+
+class Base3(Base2):
+
+----pass
+
+class MultiDerivada(Base3):
+
+----pass
+
+OBS: NÃO IMPORTA SE A DERIVAÇÃO É DIRETA OU INDIRETA, A CLASSE QUE REALIZAR A HERANÇA HERDARA TODOS OS ATRIBUTOS E METODOS DA SUPER CLASSES
+
+MRO – MTHOD RESOLUTION ORDER 
+
+METHOD RESOLUTION ORDER (RESOLUÇÃO DE ORDEM DE METODOS), É A ORDEM DE EXECUÇÃO DOS METODOS( QUEM SERA EXECUTADO PRIMEIRO)
+
+EM PYTHON, A GENTE PODE CONFERIR A ORDEM DE EXECUÇÃO DOS METODOS(MRO) DE 3 FORMAS:
+
+\- VIA PROPRIEDADE DE CLASSE \_\_mro\_\_
+
+\- VIA MÉTODO mro()
+
+\- VIA HELP
+
+
+POLIMORFISMO
+
+POLI à MUITAS
+
+MORFIS à FORMAS
+
+class Animal(object):
+
+----def \_\_init\_\_(self, nome)
+
+--------self.\_\_nome = nome
+
+----def falar(self): 
+
+--------raise NotImplementedError(‘A classe filha precisa implementar este método’)
+
+----def comer(self)
+
+--------print(f’{self.\_\_nome} esta comendo’)
+
+class Cachorro(Animal):
+
+----def \_\_init\_\_(self, nome)
+
+--------super().\_\_init\_\_(nome)
+
+----def falar(self):
+
+--------print(f’{self.\_Animal\_\_nome} aua ua’)
+
+class Gato(Animal):
+
+----def \_\_init\_\_(self, nome):
+
+--------super().\_\_init(nome)
+
+----def falar(self):
+
+--------print(f’{self\_Animal\_\_nome} miau’)
+
+QUANDO A GENTE REIMPLENTA UM MÉTODO PRESENTE NA CLASSE PAI EM CLASSES FILHAS ESTAMOS REALIZANDO UMA SOBRESCRITA DE MÉTODO (OVERRINDING)
+
+O OVERRIDING É A MELHOR REPRESENTAÇÃO DO POLIMORFISMO
+
+
+POO – METODOS MÁGICOS
+
+METODOS MÁGICOS, SÃO TODOS OS METODOS QUE UTILIZAM DUNDER
+
+dunder init à \_\_init\_\_()
+
+Dunder à Double underscore
+
+
+
+class Livro:
+
+----def \_\_init\_\_(self, titulo, autor, paginas):
+
+--------self.titulo = titulo
+
+--------self.autor = autor
+
+--------self.paginas = paginas
+
+----def \_\_repr\_\_(self):
+
+--------return self.titulo
+
+--------return self.autor
+
+--------return self.paginas
+
+DUNDER repr à REPRESENTAÇÃO DO OBJETO 
+
+LENDO ARQUIVOS CSV
+
+CSV – Comma Separeted Values – Valores separados por virgula
+
+SEPARADOR POR VIRGULA
+
+1, 2, 3, 4
+
+SEPARADOR POR PONTO E VIRGULA
+
+1; 2; 3; 4
+
+SE VOCE FOR USAR UM SEPARADOR QUE UTILIZE EM TODO O ARQUIVO
+
+POSSIVEL DE SE TRABALHAR, MAS NÃO É O IDEAL (TRABALHOSO)
+
+with open(‘nome\_do\_arquivo.csv’) as arquivo:
+
+----dados = arquivo.read()
+
+----print(type(dados))
+
+----print(dados)
+
+FORMA CORRETA DE TRABALHAR COM ARQUIVO CSV
+
+A LINGUAGEM PYTHON POSSUI DUAS FORMAS DIFERENTE PARA LER DADOS EM ARQUIVO CSV:
+
+\- reader à PERMITE QUE ITEREMOS SOBRE AS LINHAS DO ARQUIVO CSV COMO LISTAS
+
+\- DictReader à PERMITE QUE ITEREMOS SOBRE AS LINHAS DO ARQUIVO CSV COMO OrderedDicts
+
+Reader
+
+from csv import reader
+
+with open(‘nome\_do\_arquivo.csv’) as arquivo:
+
+----leitor\_csv = reader(arquivo)
+
+----next(leitor\_csv) à PULAR O CABEÇALHO
+
+----for linha in leitor\_csv:
+
+#CADA LINHA É UMA LISTA
+
+--------print(f’{linha[0]} nasceu em {linha[1]} e mede {linha[2]} centimetros’)
+
+
+ESCREVENDO OS ARQUIVOS CSV
+
+FORMA LOGICA, reader() (leitor) / writer() (escritor)
+
+writerow() à ESCREVE UMA LINHA
+
+
+writer() à GERA UM OBJETO PARA QUE POSSAMOS ESCREVER EM UM ARQUIVO CSV, UTILIZAMOS O METODO writerow() PARA ESCREVER CADA LINHA, ESTE METODO RECEBE UMA LISTA
+
+from csv import writer
+
+with open(‘filmes.csv’, ‘w’) as arquivo:
+
+----escritor\_csv = writer(arquivo)
+
+----filme = None
+
+----escritor\_csv.writerow([‘Titulo’, ‘Genero’, ‘Duração’])
+
+----while filme != ‘sair’:
+
+--------filme = input(‘informe o nome do filme: ‘)
+
+--------if filme != ‘sair’:
+
+------------genero = input(‘informe o gênero: ‘)
+
+------------duracao = input(‘informe a duração (em minuto): ‘)
+
+------------escritor\_csv.writerow([filme, gênero, duração])
+
+
+APRENDENDO A USAR O DictWriter à EM VEZ DE TRABALHAR COM LISTA ELE TRABALHA COM DICIONARIO
+
+OBS: AS CHAVES DO DICIONARIO DEVEM SER AS MESMAS UTILIZADAS COMO CABEÇALHO
+
+from csv import DictWriter
+
+with open(‘filmes.csv’, ‘w’) as arquivo:
+
+----cabecalho = [‘titulo’, ‘genero’]
+
+----escritor\_csv = DictWriter(arquivo, fieldnames=cabecalho)
+
+----escritor\_csv.writeheader()
+
+----filme = None
+
+----escritor\_csv.writerow([‘Titulo’, ‘Genero’, ‘Duração’])
+
+----while filme != ‘sair’:
+
+--------filme = input(‘informe o nome do filme: ‘)
+
+--------if filme != ‘sair’:
+
+------------genero = input(‘informe o gênero: ‘)
+
+------------duracao = input(‘informe a duração (em minuto): ‘)
+
+------------escritor\_csv.writerow({“titulo”: filme, “gênero”: gênero, “duração”: duração})
+
+CONHECENDO O PICKLE
+
+A FUNÇÃO DO PICKLE É REALIZAR O SEGUINTE PROCESSO:
+
+OBJETO PYTHON à BINARIZAÇÃO 
+
+BINARIZAÇÃO à OBJETO PYTHON
+
+ESTE PROCESSO É CHAMADA DE SERIALIZAÇÃO/DESERIALIZAÇÃO
+
+OBS: O MODULO PICKLE NÃO É SEGURO CONTRA DADOS MALICIOSOS E DESTE FORMA NÃO É RECOMENDADO TRABALHAR COM ARQUIVOS PICKLE VINDOS DE OUTRAS PESSOAS QUE VOCE NÃO CONHECA OU DE FONTES DESCONHECIDAS
+
+` `import pickle à NÃO É NECESSARIO INSTALAR
+
+DADOS SERIALIZADOS NÃO PODE SER LIDOS POR NOS HUMANOS PORQUE FORAM BINARIZADOS E HEXAZIRADOS 
+
+FAZENDO A ESCRITA EM ARQUIVOS PICKLE
+
+with open(‘nome\_da\_classe.pickle’, ‘wb’) as arquivo:
+
+----pickle.dump((felix, pluto), arquivo)
+
+
+
+FAZENDO A LEITURA DE DADOS EM ARQUIVOS PICKLE
+
+import pickle
+
+with open(‘nome\_do\_arquivo.pickle’, ‘rb’) as arquivo: à rb
+
+
+TRABALHANDO COM JSON E PICKLE
+
+JSON à JAVASCRIPT OBJECT NOTATION
+
+API – SÃO MEIOS DE COMUNICAÇÃO ENTRE OS SERVIÇOS OFERECIDOS POR EMPRESAS (TWITTER, FACEBOOK, YOUTUBE) E TERCEIROS NÓS DESENVOLVEDORES)
+
+
+import json à IMPORTAR O JSON
+
+
+MANIPULANDO DATA E HORA
+
+PYTHON TEM UM MODULO BUILT-IN (INTEGRADO) PARA SE TRABALHAR COM DATA E HORA CHAMADO DATETIME
+
+
+
+
+
+PORQUE TESTAR NOSSO CÓDIGO
+
+\- REDUZIR BUGS (PROBLEMAS) NO CODIGO EXISTENTE
+
+\- TESTES GARANTEM QUE NOVOS RECURSOS DA SUA APLICAÇÃO NÃO QUEBREM (ALTEREM) RECURSO ANTIGOS
+
+\- TESTES GARANTEM QUE BUGS (PROBLEMAS) QUE FORAM CORRIGIDOS ANTERIOMENTE CONTINUAM CORRIGIDOS
+
+\- TESTES GARANTEM QUE A REFATORAÇÃO QUE COSTUMAMOS A FAZER NÃO TRAGAM NOVOS BUGS
+
+TDD – TEST DRIVEN DEVELOPMENT (DESENVOLVIMENTO GUIADO POR TESTES) 
+
+\- VOCE ESCREVE SEU TESTE PRIMEIRO
+
+\- ENTÃO VOCE ESCREVE O CODIGO MINIMO SUFICIENTE PARA FAZER O TESTE PASSAR  (OU SEJA, EXECUTAR COM SUCESSO)
+
+\- ENTÃO REFATORA O CODIGO PARA REALIZAR A FUNCIONALIDADE E TESTA NOVAMENTE
+
+\- UMA VEZ QUE O TESTE PASSE, O RECURSO É CONSIDERADO COMPLETO
+
+ESTES ESTAGIOS DE DESENVOLVIMENTO DO TDD SÃO QUASE COMO UMA MANTRA QUE OS DESENVOLVEDORES SEGUEM, CONHECIDOS COMO
+
+\- RED à FICA VERMELHO SE DER FALHA NO CODIGO
+
+\- GREEN à FICA VERDE SE O CODIGO ESTIVER CERTO
+
+\- REFACTOR à REFATORAR, AJUSTA O CODIGO
+
+
+
+
+ASSERTIONS (AFIRMAÇÕES/CHECAGENS/QUESTIONAMENTOS)
+
+EM PYTHON UTILIZAMOS A PALAVRA RESERVADA ‘assert’ PARA REALIZAR SIMPLES AFIRMAÇOES UTILIZADAS NOS TESTES
+
+UTILIZAMOS O ‘assert’  EM UMA EXPRESSÃO QUE QUEREMOS CHECAR SE E VALIDA OU NÃO
+
+SE A EXPRESSAO FOR VERDADEIRA, RETORNA None E CASO SEJA FALSA LEVANTA UM ERRO DO TIPO AssertionError
+
+OBS à NOS PODEMOS ESPECIFICAR, OPCIONALMENTE, UM SEGUNDO ARGUMENTO OU MESMO UMA MENSAGEM DE ERRO PERSONALIZADA
+
+OBS: A PALAVRA ‘assert’ PODE SER UTILIZADA EM QUALQUER FUNÇÃO OU CODIGO NOSSO, NÃO PRECISA SER EXCLUSIVAMENTE NOS TESTES
+
+ALERTA à CUIDADO AO UTILIZAR ‘ASSERT’
+
+SE UM PROGRAMA PYTHON FOR EXECUTADO COM O PARÂMETRO -0, NENHUM ASSERTION SERA VALIDADO, OU SEJA TODAS AS SUAS VALIDAÇÕES JÁ ERAM
+
+
+
+
+
+
